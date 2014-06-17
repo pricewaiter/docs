@@ -1,0 +1,10 @@
+title: PriceWaiter Developer Documentation
+email: developers@pricewaiter.com
+description: "Developer documentation for the PriceWaiter Name Your Price® extension."
+baseurl: ""
+url: "https://developer.pricewaiter.com"
+markdown: kramdown
+permalink: pretty
+timezone: America/New_York
+sass:
+    sass_dir: _sass

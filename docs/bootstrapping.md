@@ -9,7 +9,7 @@ url: /docs/bootstrapping/
 The Name Your Price button requires 3 things on your page.
 
 1. A `<span>` indicating where in the page to put the button
-2. A `<script>` tag containing a variable called PriceWaiterOptions that sets the initial PriceWaiter Configuration Options.
+2. A `<script>` tag containing a variable called __PriceWaiterOptions__ that sets the initial PriceWaiter [Configuration Options](/docs/configuration).
 3. A `<script>` tag that loads the Name Your Price widget.
 
 ## 1. The button HTML
@@ -23,8 +23,9 @@ First, copy the PriceWaiter HTML below and put it in your page(s) where you'd li
 
 ## 2. Configuration options
 
-Second, somewhere on the page (preferably above the <script> tag you will add in step 3), add a <script> tag that looks like the code below.
-BE SURE TO CUSTOMIZE THIS CODE according to reference the Configuration Options section.
+Second, somewhere on the page (preferably above the `<script>` tag you will add in step 3), add a `<script>` tag that looks like the code below.
+
+<span class='red'>__BE SURE TO CUSTOMIZE THIS CODE__</span> according to reference the [Configuration Options](/docs/configuration) section.
 
 {% highlight html %}
 <script type="text/javascript">
@@ -45,7 +46,7 @@ BE SURE TO CUSTOMIZE THIS CODE according to reference the Configuration Options 
 
 ## 3. Loading the widget script
 
-Last, include the code below at the bottom of the page, somewhere before the closing </body> tag to load the button and NYP widget.
+Last, include the code below at the bottom of the page, somewhere before the closing `</body>` tag to load the button and NYP widget.
 
 {% highlight html %}
 <script type="text/javascript">

@@ -4,7 +4,13 @@ description: "Developer documentation for the PriceWaiter Name Your Price® exte
 baseurl: ""
 url: "https://developer.pricewaiter.com"
 markdown: kramdown
+highlighter: rouge
 permalink: pretty
 timezone: America/New_York
+exclude: [Gemfile, Gemfile.lock, README.md]
+
 sass:
-    sass_dir: _sass
+  sass_dir: _sass
+
+kramdown:
+  input: GFM

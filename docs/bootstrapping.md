@@ -16,17 +16,17 @@ The Name Your Price button requires 3 things on your page.
 
 First, copy the PriceWaiter HTML below and put it in your page(s) where you'd like the button to appear.
 
-~~~ html
+{% highlight html %}
 <!-- The span below will be replaced with the Name Your Price button once the widget has loaded. -->
 <span id="pricewaiter"></span>
-~~~
+{% endhighlight %}
 
 ## 2. Configuration options
 
 Second, somewhere on the page (preferably above the <script> tag you will add in step 3), add a <script> tag that looks like the code below.
 BE SURE TO CUSTOMIZE THIS CODE according to reference the Configuration Options section.
 
-~~~ javascript
+{% highlight html %}
 <script type="text/javascript">
     var PriceWaiterOptions = {
         apiKey: 'YOURAPIKEY',
@@ -41,24 +41,24 @@ BE SURE TO CUSTOMIZE THIS CODE according to reference the Configuration Options 
         }
     };
 </script>
-~~~
+{% endhighlight %}
 
 ## 3. Loading the widget script
 
 Last, include the code below at the bottom of the page, somewhere before the closing </body> tag to load the button and NYP widget.
 
-~~~ javascript
+{% highlight html %}
 <script type="text/javascript">
-(function() {
+    (function() {
 
-    var pw = document.createElement('script');
-    pw.type = 'text/javascript';
-    pw.src = "https://widget.pricewaiter.com/nyp/script/widget.js?1381796738";
-    pw.async = true;
+        var pw = document.createElement('script');
+        pw.type = 'text/javascript';
+        pw.src = "https://widget.pricewaiter.com/nyp/script/widget.js?1381796738";
+        pw.async = true;
 
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(pw, s);
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(pw, s);
 
-})();
+    })();
 </script>
-~~~
+{% endhighlight %}

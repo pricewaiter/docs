@@ -1,1 +1,6 @@
-<h1>docs</h1>
+<div class="docmenu">
+  {% for section in site.data.docs %}
+    <h2>{{ section.title }}</h2>
+    {% include docs_ul.html items=section.docs %}
+  {% endfor %}
+</div>

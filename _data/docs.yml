@@ -1,12 +1,10 @@
 - title: JavaScript Widget
   docs:
-  - home
-  - bootstraping
+  - bootstrapping
   - configuration
   - api
 - title: Order Callback
   docs:
-  - home
-  - configuration
-  - api
-
+  - introduction
+  - usage
+  - callbackapi

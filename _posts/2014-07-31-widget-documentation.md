@@ -67,20 +67,20 @@ First, copy the PriceWaiter HTML below and put it in your page(s) where you’d 
 
 </div>
 <div class="{{ site.doc_col_dark }}">
-{% highlight html %}
-    <script type="text/javascript">
-        (function() {
+{% highlight javascript %}
+<script type="text/javascript">
+(function() {
 
-            var pw = document.createElement('script');
-            pw.type = 'text/javascript';
-            pw.src = "https://widget.pricewaiter.com/nyp/script/widget.js?1381796738";
-            pw.async = true;
+    var pw = document.createElement('script');
+    pw.type = 'text/javascript';
+    pw.src = "https://widget-staging.pricewaiter.com/nyp/script/widget.js?1381796738";
+    pw.async = true;
 
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(pw, s);
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(pw, s);
 
-        })();
-    </script>
+})();
+</script>
 {% endhighlight %}
 </div>
 </div>

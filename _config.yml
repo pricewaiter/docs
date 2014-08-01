@@ -1,16 +1,43 @@
-title: PriceWaiter Developer Documentation
-email: developers@pricewaiter.com
-description: "Developer documentation for the PriceWaiter Name Your Price® extension."
-baseurl: ""
-url: "https://developer.pricewaiter.com"
-markdown: kramdown
-highlighter: rouge
-permalink: pretty
-timezone: America/New_York
-exclude: [Gemfile, Gemfile.lock, README.md]
+# Site title and subtitle. This is used in _includes/header.html
+title: 'PriceWaiter Developer Documentation'
+subtitle: 'documentation for the PriceWaiter Name Your Price® extension.'
 
-sass:
-  sass_dir: _sass
+footer: 'PriceWaiter'
+
+# Enable/show navigation. There are there options:
+#   0 - always hide
+#   1 - always show
+#   2 - show only if posts are present
+navigation: 1
+
+# URL to source code, used in _includes/footer.html
+codeurl: 'https://www.pricewaiter.com'
+
+# Default categories (in order) to appear in the navigation
+sections: [
+    ['doc', 'Documentation'],
+    ['tut', 'Tutorial'],
+    ['ref', 'Reference']
+]
+
+# Keep as an empty string if served up at the root. If served up at a specific
+# path (e.g. on GitHub pages) leave off the trailing slash, e.g. /my-project
+baseurl: ''
+
+# Dates are not included in permalinks
+permalink: none
+
+# Syntax highlighting
+highlighter: rouge
+
+# Since these are pages, it doesn't really matter
+future: true
+
+# Exclude non-site files
+exclude: ['bin', 'README.md','node_modules','Gruntfile.js','package.json','bower.json','less']
+
+# Use the kramdown Markdown renderer
+markdown: kramdown
 
 kramdown:
   input: GFM

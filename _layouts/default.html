@@ -21,27 +21,32 @@
             {% include header.html %}
         </div>
     </header>
+
     <div class="content-wrap clearfix">
-
-
-    <!-- Unchecked content -->
-    <div class="row">
-      {% assign post_count = site.posts|size %}
-      {% if site.navigation != 0 and site.navigation == 1 or post_count > 0 %}
-        <nav class="sidenav" role="navigation">
-          <article class="row doc-item">
-          {% include navigation.html %}
-          </article>
-        </nav>
-          <section class="content-main">
-          {{ content }}
-          </section>
+        <!-- Unchecked content -->
+        {% assign post_count = site.posts|size %}
+        {% if site.navigation != 0 and site.navigation == 1 or post_count > 0 %}
+            <aside class="content-sidebar">
+                <nav class="sidenav" role="navigation">
+                  {% include navigation.html %}
+                </nav>
+            </aside>
+            <section class="content-main">
+              {% for post in site.posts %}
+                  <a href="{{ post.url }}">{{ post.title }}</a>
+                  {{ post.shit }}
+                  {{ post.extra }}
+                  {{ post.content }}
+                  <hr>
+              {% endfor %}
+            </section>
         {% else %}
-          <section class="content-main">
-          {{ content }}
-          </section>
+            <section class="content-full">
+              {{ content }}
+            </section>
         {% endif %}
-    </div>
+        </div>
+    </div><!--! .content-wrap -->
 
 
         <script>
@@ -96,7 +101,7 @@
         <!-- end of unchecked content -->
 
 
-    </div>
+    
     <footer>
       <div class="container-fluid">
         {% include footer.html %}

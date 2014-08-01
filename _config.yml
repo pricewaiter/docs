@@ -41,11 +41,12 @@ markdown: kramdown
 
 kramdown:
   input: GFM
+  parse_block_html: true
 
 
 #Site Vars
 doc_row: 'row'
 
-doc_col_light: 'col-xs-12 col-sm-4 light'
+doc_col_light: 'col-xs-12 col-md-4 light'
 
-doc_col_dark: 'col-xs-12 col-sm-4 dark'
+doc_col_dark: 'col-xs-12 col-md-8 dark'

@@ -24,29 +24,14 @@
 
     <div class="content-wrap clearfix">
         <!-- Unchecked content -->
-        {% assign post_count = site.posts|size %}
-        {% if site.navigation != 0 and site.navigation == 1 or post_count > 0 %}
             <aside class="content-sidebar">
                 <nav class="sidenav" role="navigation">
                   {% include navigation.html %}
                 </nav>
             </aside>
             <section class="content-main">
-              {% for post in site.posts %}
-                  <a href="{{ post.url }}">{{ post.title }}</a>
-                  {{ post.shit }}
-                  {{ post.extra }}
-                  {{ post.content }}
-                  {{ post.content_left}}
-                  <hr>
-              {% endfor %}
+                {{ content }}
             </section>
-        {% else %}
-            <section class="content-full">
-              {{ content }}
-            </section>
-        {% endif %}
-        </div>
 
     </div><!--! .content-wrap -->
 
@@ -101,9 +86,6 @@
             if (document.querySelectorAll) orderNav();
         </script>
         <!-- end of unchecked content -->
-
-
-    
     <footer>
       <div class="container-fluid">
         {% include footer.html %}

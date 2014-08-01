@@ -6,31 +6,80 @@ date: 2014-07-31 15:56:31
 ---
 
 <div class="{{ site.doc_row }}">
-    <div class="{{ site.doc_col_light }}">
+	<div class="{{site.doc_col_light }}">
+<h2>Bootstrapping</h2>
+	<p>The Name Your Price button requires 3 things on your page.</p>
+		<ol>
+            <li>A <code>&lt;span&gt;</code> indicating where in the page to put the button</li>
+            <li>A <code>&lt;script&gt;</code> tag containing a variable called <strong>PriceWaiterOptions</strong> that sets the initial PriceWaiter config </li>
+            <li>A <code>&lt;script&gt;</code> tag that loads the Name Your Price widget.</li>
+        </ol>
+	</div>
+</div>
 
-        Gotta work on my code escaping skills before I copy paste all the docs
-        Here is some solid code that makes price waiter do its magic.
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+<div class="{{ site.doc_row }}">
+    <div class="{{ site.doc_col_light }}">
+	<h2>1. The Button HTML</h2>
+	First, copy the PriceWaiter HTML below and put it in your page(s) where you’d like the button to appear.
     </div>
 	<div class="{{ site.doc_col_dark }}">
-	{% highlight javascript %}
-	<script type="text/javascript">
-	    var PriceWaiterOptions = {
-	        apiKey: 'DEMO',
-	        product: {
-	            sku: 'Product SKU',
-	            name: 'Product Name',
-	            price: 199,
-	            image: 'images_demo_iphone.jpg'
-	        },
-	        metadata: {
-	            referer: 'pinterest'
-	        },
-	        onLoad: function() {
-	            alert('PriceWaiter is loaded');
-	        }
-	    };
-	</script>
+	<br/>
+	{% highlight html %}
+	<!-- The span below will be replaced with the Name Your Price button once the widget has loaded. -->
+	<span id="pricewaiter"></span>
 	{% endhighlight %}
     </div>
+</div>
+
+<div class="{{ site.doc_row }}">
+
+	<div class="{{ site.doc_col_light }}">
+    <h2 id="configuration-options">2. Configuration options</h2>
+
+            <p>Second, somewhere on the page (preferably above the
+            <code>&lt;script&gt;</code> tag you will add in step 3), add a
+            <code>&lt;script&gt;</code> tag that looks like the code below.</p>
+            <p><span class="red"><strong>BE SURE TO CUSTOMIZE THIS CODE</strong></span>	</p>
+	
+	</div>
+	<div class="{{ site.doc_col_dark }}">
+{% highlight html %}
+<script type="text/javascript">
+    (function() {
+      var pw = document.createElement('script');
+      pw.type = 'text/javascript';
+      pw.src = "https://widget.pricewaiter.com/nyp/script/widget.js?1381796738";
+      pw.async = true;
+
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(pw, s);
+    })();
+</script>
+{% endhighlight %}
+	</div>
+</div>
+
+<div class="{{ site.col_row }}">
+  <div class="{{ site.doc_col_light }}">
+    <h2>3. Loading the widget script</h2>
+    <p>Last, include the code below at the bottom of the page, somewhere before the closing <code>&lt;/body&gt;</code> tag to load
+    the button and NYP widget.</p>
+  </div>
+  <div class="{{ site.doc_col_light }}">
+    {% highlight html %}
+    <script type="text/javascript">
+        (function() {
+
+            var pw = document.createElement('script');
+            pw.type = 'text/javascript';
+            pw.src = "https://widget.pricewaiter.com/nyp/script/widget.js?1381796738";
+            pw.async = true;
+
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(pw, s);
+
+        })();
+    </script>
+    {% endhighlight %}
+  </div>
 </div>

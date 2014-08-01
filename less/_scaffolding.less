@@ -4,15 +4,15 @@
 // - Global layouts & core elements
 //
 //////////////////////////////////////////////////
+ .content-wrap {} .content-sidebar {
+    float: left;
+    width: @sidebar-width;
 
-.content-wrap {}
-.content-sidebar {
-	float: left;
-	width: @sidebar-width;
-	margin-right: -@sidebar-width;
+margin-right: -@sidebar-width;
+
 }
 .content-main {
-	float: left;
-	padding-left: (@sidebar-width + 20px); // Update 20 px to play w/ bootstrap gutter settings
-	width: 100%;
+    float: left;
+    padding-left: (@sidebar-width + 20px); // Update 20 px to play w/ bootstrap gutter settings
+    width: 100%;
 }

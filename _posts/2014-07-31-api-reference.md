@@ -12,3 +12,7 @@ date: 2014-07-31 16:00:09
 		<td>TD yo.</td>
 	</tr>
 </table>
+
+{% capture title %}
+I've upset the title
+{% endcapture %}

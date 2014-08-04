@@ -43,7 +43,7 @@ First, copy the PriceWaiter HTML below and put it in your page(s) where you’d 
 
 </div>
 <div class="{{ site.doc_col_dark }}">
-{% highlight html %}
+{% highlight javascript %}
 <script type="text/javascript">
     (function() {
       var pw = document.createElement('script');

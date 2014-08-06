@@ -63,8 +63,8 @@ module Jekyll
       context.registers[:directory] ||= Hash.new(0)
 
       source_dir = context.registers[:site].source
-      @path = render_variable(context) || @path
-      directory_files = File.join(source_dir, @path, "*")
+      rendered_path = render_variable(context)
+      directory_files = File.join(source_dir, rendered_path, "*")
 
       files = Dir.glob(directory_files).reject{|f| f =~ @exclude }
       files.sort! {|x,y| @rev ? x <=> y : y <=> x }

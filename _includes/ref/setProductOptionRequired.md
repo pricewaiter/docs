@@ -1,3 +1,4 @@
+
 #### setProductOptionRequired(option, [required = true])
 
 Mark one or more product options as "required". If an option is required the PriceWaiter UI will not be shown unless a value has been provided for that option via __setProductOption__.

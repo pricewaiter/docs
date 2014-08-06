@@ -5,4 +5,4 @@ _site
 .DS_Store
 node_modules
 bower_components
-
+/css/*.css

@@ -8,7 +8,7 @@
         <title>{{ site.title }}{% if page.title %} : {{ page.title }}{% endif %}</title>
         <meta name="description" content="{{ site.subtitle }}">
 
-        <link rel="stylesheet" href="{{ site.baseurl }}/bower_components/bootstrap/dist/css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="{{ site.baseurl }}/bower_components/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="{{ site.baseurl }}/css/theme.min.css">
 
         <script type="text/javascript" src="{{ site.baseurl }}/bower_components/jquery/dist/jquery.min.js"></script>
@@ -24,19 +24,19 @@
 
     <div class="content-wrap clearfix">
         <!-- Unchecked content -->
-            <aside class="content-sidebar">
+            <aside class="content-sidebar col-md-2">
                 <nav class="sidenav" role="navigation">
                   {% include navigation.html %}
                 </nav>
             </aside>
-            <section class="content-main">
+            <section class="content-main col-md-10">
                 {{ content }}
             </section>
 
     </div><!--! .content-wrap -->
 
 
-        
+
         <!-- end of unchecked content -->
     <footer>
       <div class="container-fluid">

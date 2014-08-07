@@ -1,6 +1,7 @@
+
 <div class="{{ site.doc_row }}">
-***
 <div class="{{ site.doc_col_light }}">
+
 #### clearMetadata(key)
 
 Bulk set metadata about this product or visitor.

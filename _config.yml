@@ -43,7 +43,6 @@ kramdown:
   input: GFM
   parse_block_html: true
 
-
 #Site Vars
 doc_row: 'row'
 

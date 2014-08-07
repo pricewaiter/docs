@@ -9,7 +9,7 @@ module.exports = function(grunt) {
                 },
                 files: {
                     // target.css file: source.less file
-                    "less/theme.css": "less/theme.less"
+                    "_assets/less/theme.css": "_assets/less/theme.less"
                 }
             }
         },
@@ -20,26 +20,26 @@ module.exports = function(grunt) {
             multiple_files: {
                 expand: true,
                 flatten: true,
-                src: 'less/*.css',
-                dest: 'css/'
+                src: '_assets/less/*.css',
+                dest: '_assets/css/'
             }
         },
         clean: {
-            less: ['less/*.css'],
-            css: ['css/theme.css']
+            less: ['_assets/less/*.css'],
+            css: ['_assets/css/theme.css']
         },
 
         cssmin: {
             minify: {
                 files: {
-                    'css/theme.min.css': 'css/theme.css'
+                    '_assets/css/theme.min.css': '_assets/css/theme.css'
                 }
             }
         },
 
         watch: {
             css: {
-                files: ['less/**/*'],
+                files: ['_assets/less/**/*'],
                 tasks: 'css'
             }
         }

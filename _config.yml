@@ -17,7 +17,8 @@ codeurl: 'https://www.pricewaiter.com'
 sections: [
     ['doc', 'Documentation'],
     ['tut', 'Tutorial'],
-    ['ref', 'Reference']
+    ['ref', 'Reference'],
+    ['dwn', 'Downloads']
 ]
 
 # Keep as an empty string if served up at the root. If served up at a specific

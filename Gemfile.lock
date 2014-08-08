@@ -99,6 +99,7 @@ GEM
     sprockets-sass (1.2.0)
       sprockets (~> 2.0)
       tilt (~> 1.1)
+    stemmer (1.0.1)
     therubyracer (0.12.1)
       libv8 (~> 3.16.14.0)
       ref
@@ -118,4 +119,5 @@ DEPENDENCIES
   jekyll-less
   rake
   rouge
+  stemmer
   therubyracer

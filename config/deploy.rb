@@ -5,13 +5,9 @@ set :repository, "_site"
 set :scm, :none
 set :copy_compression, :gzip
 set :use_sudo, false
-
+set :copy_remote_dir, "/home/docs/"
 set :user, "docs"
-
 set :deploy_to, "/home/docs/www/"
-
-
-
 
 role :web, "river.pricewaiter.com"                          # Your HTTP server, Apache/etc
 

@@ -35,7 +35,7 @@ highlighter: rouge
 future: true
 
 # Exclude non-site files
-exclude: ['bin', 'README.md','deploy.sh','node_modules','Gemfile*']
+exclude: ['vendor','bin', 'README.md','deploy.sh','node_modules','Gemfile*']
 
 # Use the kramdown Markdown renderer
 markdown: kramdown

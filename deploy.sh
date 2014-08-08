@@ -2,7 +2,7 @@
 #
 # Script for jenkins to run to build jekyll & cap deploy
 
-bundle
+bundle install --path vendor/bundle
 
 bundle exec jekyll build
 

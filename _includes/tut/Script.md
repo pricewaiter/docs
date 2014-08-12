@@ -1,7 +1,7 @@
 <div class="{{ site.doc_row }}">
 ***
 <div class="{{ site.doc_col_light }}">
-### Step Three
+### Step Two
 
 Then, include this code at the bottom of the page to load the button:
 

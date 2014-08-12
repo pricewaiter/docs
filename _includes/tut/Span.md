@@ -1,7 +1,7 @@
 <div class="{{ site.doc_row }}">
 ***
 <div class="{{ site.doc_col_light }}">
-### Step One
+### Step Three
 
 First put a PriceWaiter placeholder where you'd like the button to appear on the page:
 

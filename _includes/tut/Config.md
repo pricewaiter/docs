@@ -1,9 +1,9 @@
 <div class="{{ site.doc_row }}">
 ***
 <div class="{{ site.doc_col_light }}">
-### Step Two
+### Step One
 
-Then include <script> block to configure the button:
+Then include the script block to configure the button:
 
 </div>
 <div class="{{ site.doc_col_dark }}">
@@ -24,7 +24,6 @@ var PriceWaiterOptions = {
 
 };
 </script>
-<span id="pricewaiter"></span>
 {% endhighlight %}
 </div>
 </div>

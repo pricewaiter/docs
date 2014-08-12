@@ -18,7 +18,7 @@ sections: [
     ['doc', 'Documentation'],
     ['tut', 'Tutorial'],
     ['ref', 'Reference'],
-    ['dwn', 'Downloads']
+    ['dwn', 'Other Documentation']
 ]
 
 # Keep as an empty string if served up at the root. If served up at a specific

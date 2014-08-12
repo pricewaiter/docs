@@ -11,3 +11,6 @@ Check out the API refrence to learn more about some of PriceWaiters advanced fea
 
 ## [Widget Documentation]({{ site.baseurl }}/doc/widget-documentation.html)
 Read through the widget documenation to understand how PriceWaiter works.
+
+## [Other Documentation]({{ site.baseurl}}/dwn/other-documentation.html)
+Here is some other documentation that may or may not be helpful or relevant.

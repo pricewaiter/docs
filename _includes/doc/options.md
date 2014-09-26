@@ -1,5 +1,4 @@
 <div class="{{ site.doc_row }}">
-***
 <div class="{{ site.doc_col_light }}">
 ## Configuration Options
 

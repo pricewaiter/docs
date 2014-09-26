@@ -1,6 +1,6 @@
 # Site title and subtitle. This is used in _includes/header.html
 title: 'PriceWaiter Developer Documentation'
-subtitle: 'documentation for the PriceWaiter Name Your Price® extension.'
+subtitle: 'Name Your Price<sup>®</sup> Extension Documentation'
 
 footer: 'PriceWaiter'
 
@@ -45,8 +45,8 @@ kramdown:
   parse_block_html: true
 
 #Site Vars
-doc_row: 'row'
+doc_row: 'grid-row'
 
-doc_col_light: 'col-xs-12 col-md-4 light'
+doc_col_light: 'column column-light'
 
-doc_col_dark: 'col-xs-12 col-md-8 dark'
+doc_col_dark: 'column column-dark'

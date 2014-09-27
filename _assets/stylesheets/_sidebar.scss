@@ -1,0 +1,23 @@
+
+// Navigation
+.sidenav {
+
+	a {
+		display: block;
+		padding-top: 2px;
+		padding-bottom: 2px;
+	}
+
+	> li > a {
+		font-weight: bold;
+	}
+
+	li li {
+		font-size: 13px;
+	}
+
+	ul ul {
+		display: none; // Hide nested ul's
+		padding-left: 10px;
+	}
+}

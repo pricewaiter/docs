@@ -1,0 +1,64 @@
+// Header
+header.global {
+	background: url(image-path("header-bg.png")) repeat-x 50% 100%;
+	padding: 14px $grid-gutter-width 26px $grid-gutter-width;
+
+	.brand {
+		float: left;
+		max-width: 118px;
+	}
+
+	.slogan {
+		color: $tan-dark;
+		display: inline-block;
+		padding-left: 18px;
+		padding-top: 12px;
+		text-shadow: 0 0 -1px rgba(0,0,0,0.3);
+	}
+}
+
+// Top Nav
+.topnav {
+	float: right;
+
+	li {
+		display: inline;
+		border-left: 1px solid $tan;
+		padding: 0 8px;
+
+		&:first-child {
+			border-left: none;
+		}
+	}
+
+	a {
+		color: #fff;
+		padding: 4px 8px;
+	}
+}
+
+// Layout Columns
+.content-sidebar,
+.content-main {
+	position: relative;
+}
+.content-main {
+	z-index: 1;
+}
+.content-sidebar {
+	z-index: 2;
+}
+
+@media (min-width: $screen-md-max) {
+	.content-sidebar {
+		float: left;
+		margin-right: -$sidebar-width;
+		padding-left: $grid-gutter-width;
+		width: $sidebar-width;
+	}
+	.content-main {
+		float: right;
+		width: 100%;
+		padding-left: ($sidebar-width + $sidebar-gutter-width);
+	}
+}

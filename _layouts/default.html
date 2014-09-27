@@ -3,34 +3,32 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.25, minimum-scale=1.0, user-scalable=1">
 
         <title>{{ site.title }}{% if page.title %} : {{ page.title }}{% endif %}</title>
         <meta name="description" content="{{ site.subtitle }}">
 
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         {% stylesheet theme.css %}
 
         <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         {% javascript test.js %}
     </head>
     <body>
 
-    <header class="global">
-        <div class="container-fluid">
+    <header class="global clearfix">
+        <div class="container">
             {% include header.html %}
         </div>
     </header>
 
     <div class="content-wrap clearfix">
         <!-- Unchecked content -->
-            <aside class="content-sidebar col-md-2">
+            <aside class="content-sidebar">
                 <nav class="sidenav" role="navigation">
                   {% include navigation.html %}
                 </nav>
             </aside>
-            <section class="content-main col-md-10">
+            <section class="content-main">
                 {{ content }}
             </section>
 

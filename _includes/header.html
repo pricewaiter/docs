@@ -1,4 +1,8 @@
-<h4><a class=brand href="{{ site.baseurl }}/">{{ site.title }}</a>
-    {% if site.subtitle %}<small>{{ site.subtitle }}</small>{% endif %}
-</h4>
-
+<a class="brand" href="{{ site.baseurl }}/"><image src={% asset_path pw-logo-white.svg%} onerror="this.src='{% asset_path pw-logo-white.png%}';" alt="{{ site.title }}"></a>
+{% if site.subtitle %}<span class="slogan">{{ site.subtitle }}</span>{% endif %}
+<nav class="topnav" role="navigation">
+	<ul>
+		<li><a href="https://www.pricewaiter.com/support">Support</a></li>
+		<li><a href="https://manage.pricewaiter.com">Sign In</a></li>
+	</ul>
+</nav>

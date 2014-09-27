@@ -37,6 +37,11 @@ header.global {
 	}
 }
 
+footer {
+	@include span(last 10);
+	margin: 20px 0;
+}
+
 .content-wrap {
 	@include container();
 }

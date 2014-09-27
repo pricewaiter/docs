@@ -37,28 +37,15 @@ header.global {
 	}
 }
 
-// Layout Columns
-.content-sidebar,
-.content-main {
-	position: relative;
-}
-.content-main {
-	z-index: 1;
-}
-.content-sidebar {
-	z-index: 2;
+.content-wrap {
+	@include container();
 }
 
 @media (min-width: $screen-md-max) {
 	.content-sidebar {
-		float: left;
-		margin-right: -$sidebar-width;
-		padding-left: $grid-gutter-width;
-		width: $sidebar-width;
+		@include span(2);
 	}
 	.content-main {
-		float: right;
-		width: 100%;
-		padding-left: ($sidebar-width + $sidebar-gutter-width);
+		@include span(last 10);
 	}
 }

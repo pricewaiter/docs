@@ -1,3 +1,11 @@
+
+$susy: (
+  columns: 12,
+  gutters: .25,
+  gutter-position: split,
+);
+
+
 .grid-row {
 	@include clearfix();
 	position: relative;

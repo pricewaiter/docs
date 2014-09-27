@@ -1,7 +1,10 @@
-// Core 
+// Core
 @import "variables";
 @import "mixins/vendor_prefixes";
 @import "mixins/clearfix";
+
+// Vendor
+@import "susy";
 
 // Scaffolding & Layout
 @import "normalize";

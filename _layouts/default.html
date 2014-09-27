@@ -15,32 +15,28 @@
     </head>
     <body>
 
-    <header class="global clearfix">
-        <div class="container">
-            {% include header.html %}
-        </div>
-    </header>
+        <header class="global clearfix">
+            <div class="container">
+                {% include header.html %}
+            </div>
+        </header>
 
-    <div class="content-wrap clearfix">
-        <!-- Unchecked content -->
-            <aside class="content-sidebar">
-                <nav class="sidenav" role="navigation">
-                  {% include navigation.html %}
-                </nav>
-            </aside>
-            <section class="content-main">
-                {{ content }}
-            </section>
+        <div class="content-wrap clearfix">
+            <!-- Unchecked content -->
+                <aside class="content-sidebar">
+                    <nav class="sidenav" role="navigation">
+                      {% include navigation.html %}
+                    </nav>
+                </aside>
+                <section class="content-main">
+                    {{ content }}
+                </section>
 
-    </div><!--! .content-wrap -->
-
-
+        </div><!--! .content-wrap -->
 
         <!-- end of unchecked content -->
-    <footer>
-      <div class="container-fluid">
-        {% include footer.html %}
-      </div>
-    </footer>
+        <footer>
+            {% include footer.html %}
+        </footer>
     </body>
 </html>

@@ -2,7 +2,11 @@
     background-color: #ffffcc
 }
 .highlight {
-    background: #ffffff;
+    background: $tan;
+    border: 3px solid $tan-dark;
+    border-radius: 3px;
+    padding: 0 20px;
+    max-width: 800px;
 }
 .highlight .c {
     color: #888888

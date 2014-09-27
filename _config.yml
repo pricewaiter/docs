@@ -16,7 +16,6 @@ codeurl: 'https://www.pricewaiter.com'
 # Default categories (in order) to appear in the navigation
 sections: [
     ['doc', 'Documentation'],
-    ['tut', 'Tutorial'],
     ['ref', 'Reference'],
     ['dwn', 'Other Documentation']
 ]

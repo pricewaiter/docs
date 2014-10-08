@@ -1,6 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    autoprefixer-rails (3.1.1.20141001)
+      execjs
     blankslate (2.1.2.4)
     capistrano (2.15.4)
       highline
@@ -119,6 +121,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  autoprefixer-rails
   capistrano
   compass
   compass-normalize

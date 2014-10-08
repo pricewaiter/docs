@@ -44,7 +44,7 @@ kramdown:
   parse_block_html: true
 
 #Site Vars
-doc_row: 'grid-row'
+doc_row: 'row'
 
 doc_col_light: 'column column-light'
 

@@ -1,7 +1,8 @@
 // Header
 header.global {
+	@extend .container;
 	background: url(image-path("header-bg.png")) repeat-x 50% 100%;
-	padding: 14px $grid-gutter-width 26px $grid-gutter-width;
+	padding: 14px gutter() 26px gutter();
 
 	.brand {
 		float: left;
@@ -43,7 +44,12 @@ footer {
 }
 
 .content-wrap {
-	@include container();
+	@extend .container;
+}
+
+.content-sidebar,
+.content-main {
+	@extend .column;
 }
 
 @media (min-width: $screen-md-max) {

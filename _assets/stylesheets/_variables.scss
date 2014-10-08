@@ -1,3 +1,15 @@
+// Suzy Config
+// - http://susydocs.oddbird.net/en/latest/settings/
+
+$susy: (
+    columns: 12,
+    gutters: 1/4,
+    math: fluid,
+    output: float,
+    gutter-position: inside,
+    global-box-sizing: border-box,
+    gutter-override: 30px,
+);
 
 
 // PW colors
@@ -28,14 +40,6 @@ $screen-xl: 			1200px;
 $screen-sm-max: 		($screen-md - 1);
 $screen-md-max: 		($screen-lg - 1);
 $screen-lg-max: 		($screen-xl - 1);
-
-
-// Grid & Sizing
-$grid-columns:			12;
-$grid-gutter-width: 	20px;
-
-$sidebar-width:			220px;
-$sidebar-gutter-width: 	40px;
 
 
 // Typography

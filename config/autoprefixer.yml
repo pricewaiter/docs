@@ -1,0 +1,6 @@
+browsers:
+    "last 10 version"
+    "> 4%"
+    "Explorer 10"
+    "Explorer 9"
+    "Explorer 8"

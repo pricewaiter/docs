@@ -1,6 +1,7 @@
-footer {
-	@include span(last 10);
-	margin: 20px 0;
+.site-footer {
+	background: #eee;
+	margin-top: 40px;
+	padding: 10px gutter();
 }
 
 .content-wrap {
@@ -13,10 +14,31 @@ footer {
 }
 
 @media (min-width: $screen-md-max) {
-	.content-sidebar {
-		@include span(2);
+	.site-header {
+		position: fixed;
+	    top: 0;
+	    width: 100%;
 	}
+
+	.content-sidebar {
+		width: $sidebar-width;
+		position: fixed;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		overflow: auto;
+		padding-top: 100px; // Header Height (81px)
+		z-index: 1;
+	}
+
 	.content-main {
-		@include span(last 10);
+		margin-left: ($sidebar-width + $sidebar-offset);
+		padding-left: 0;
+		padding-top: 90px; // Header +
+	}
+
+	.site-footer {
+		margin-left: $sidebar-width;
+		padding-left: $sidebar-offset;
 	}
 }

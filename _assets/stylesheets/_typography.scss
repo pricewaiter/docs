@@ -1,0 +1,48 @@
+h1, h2, h3, h4, h5, h6 {
+    color: $headings-color;
+    font-family: $headings-font-family;
+    font-weight: $headings-font-weight;
+    line-height: $headings-line-height;
+    margin: 14px 0;
+    padding: 0;
+}
+
+h1 {
+   font-size: $font-size-h1; 
+}
+h2 {
+   font-size: $font-size-h2; 
+}
+h3 {
+   font-size: $font-size-h3; 
+}
+h4 {
+   font-size: $font-size-h4; 
+}
+h5 {
+   font-size: $font-size-h5; 
+}
+h6 {
+   font-size: $font-size-h6; 
+}
+
+p {
+    &:empty {
+        display: none;
+    }
+}
+
+strong, b {
+    font-weight: $font-weight-bold;
+}
+
+code {
+    background-color: lighten($blue, 20%);
+    border-radius: 3px;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: $font-family-monospace;
+    font-size: 0.8em;
+    padding-left: 4px;
+    padding-right: 4px;
+}

@@ -32,9 +32,11 @@ html {
 body {
 	font-family: $font-family-base;
 	font-size: $font-size-base;
+	font-weight: $font-weight;
 	line-height: $line-height-base;
 	color: $text-color;
 	background-color: $body-bg;
+	word-wrap: break-word;	// Keep long strings from borking mobile
 }
 
 // Reset fonts for relevant elements

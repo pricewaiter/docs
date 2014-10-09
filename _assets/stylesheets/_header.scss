@@ -1,7 +1,8 @@
 // Header
 // ------
 
-header.global {
+.site-header {
+    z-index: 10;
 
     .brand {
         float: left;
@@ -38,6 +39,12 @@ header.global {
             display: none;
         }
     }
+
+    @media (max-width: $screen-sm) {
+        .brand {
+            max-width: 80px;
+        }
+    }
 }
 
 // Top Nav
@@ -45,24 +52,38 @@ header.global {
 
 .topnav {
     float: right;
-    margin-top: 10px;
+    margin-top: 4px;
 
     li {
         display: inline-block;
-        padding: 0 0 0 12px;
+        padding: 0 0 0 10px;
     }
 
     a {
         color: #fff;
-        border: 1px solid #fff;
+        border: 1px solid transparent;
         border-radius: 3px;
-        padding: 4px 8px;
+        padding: 4px 0;
         transition: all 0.2s linear;
 
         &:hover {
             color: $blue;
-            border-color: $blue;
             text-decoration: none;
         }
+
+        &.outlined {
+            border: 1px solid #fff;
+            border-radius: 3px;
+            padding-left: 8px;
+            padding-right: 8px;  
+
+            &:hover {
+                border-color: $blue;
+            }
+        }
+    }
+
+    @media (min-width: $screen-sm) {
+        margin-top: 10px;
     }
 }

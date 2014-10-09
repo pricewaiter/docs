@@ -11,36 +11,40 @@
         {% stylesheet theme.css %}
 
         <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        {% javascript test.js %}
+        {% javascript docs.js %}
     </head>
     <body>
 
-    <header class="global clearfix">
-        <div class="container">
-            {% include header.html %}
-        </div>
-    </header>
+        <header class="site-header">
+            <div class="header-top">
+                {% include header.html %}
+            </div>
+            <div class="header-drapes"></div>
+        </header>
 
-    <div class="content-wrap clearfix">
-        <!-- Unchecked content -->
-            <aside class="content-sidebar">
-                <nav class="sidenav" role="navigation">
-                  {% include navigation.html %}
-                </nav>
-            </aside>
-            <section class="content-main">
-                {{ content }}
-            </section>
+        <div class="content-wrap">
+            <!-- Unchecked content -->
+                <aside class="content-sidebar">
+                    <div class="nav-toggle-wrap visible-sm">
+                        <a id="nav-toggle" class="nav-toggle">
+                            <span class="label">Menu</span>
+                            <span class="hamburger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </a>
+                    </div>
+                    <nav id="sidenav" class="sidenav visible-md visible-lg visible-xl" role="navigation">
+                      {% include navigation.html %}
+                    </nav>
+                </aside>
+                <section class="content-main">
+                    {{ content }}
+                </section>
 
-    </div><!--! .content-wrap -->
+        </div><!--! .content-wrap -->
 
-
-
-        <!-- end of unchecked content -->
-    <footer>
-      <div class="container-fluid">
         {% include footer.html %}
-      </div>
-    </footer>
     </body>
 </html>

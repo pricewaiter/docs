@@ -1,23 +1,96 @@
+// General sidebar
+// ---------------
+
+.content-sidebar {
+	background: $link-color;
+
+	@media (max-width: $screen-md) {
+		margin-top: -10px;
+	}
+}
+
+
+// Mobile Nav Toggle
+// -----------------
+
+.nav-toggle-wrap {
+    a {
+        border: 1px solid $link-color;
+        border-radius: 3px;
+        color: #fff;
+        cursor: pointer;
+        display: block;
+        text-decoration: none;
+        padding: 4px 0;
+
+        @include clearfix();
+
+        &:hover {
+        	text-decoration: none;
+        }
+    }
+
+    .label {
+        font-weight: $font-weight-bold;
+        font-size: 1.1em;
+        display: inline-block;
+        padding-top: 3px;
+        vertical-align: middle;
+    }
+
+    .hamburger {
+        float: right;
+        width: 26px;
+
+        > span {
+            background: #fff;
+            display: block;
+            height: 3px;
+            margin: 5px 0;
+        }
+    }
+}
 
 // Navigation
+// ----------
+
 .sidenav {
+	margin: 0 (gutter() * -1) 20px (gutter() * -1);
 
 	a {
+		color: #fff;
 		display: block;
-		padding-top: 2px;
-		padding-bottom: 2px;
+		padding: 2px gutter();
+		transition: all 0.2s linear;
+
+		&:hover {
+			// background: $blue;
+			background: lighten($link-color, 10%);
+			text-decoration: none;
+		}
 	}
 
-	> li > a {
+	> ul > li > a {
+		background: darken($link-color, 10%);
 		font-weight: bold;
+		padding: 8px gutter();
+
+		&:hover {
+			background: darken($link-color, 4%);
+		}
+	}
+
+	> ul > li + li {
+		border-top: 1px solid $link-color;
 	}
 
 	li li {
 		font-size: 13px;
+		font-weight: 200;
 	}
-
+	
 	ul ul {
-		display: none; // Hide nested ul's
-		padding-left: 10px;
+		margin-top: 6px;
+		margin-bottom: 10px;
 	}
 }

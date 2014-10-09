@@ -3,13 +3,29 @@ PriceWaiter Developer Documentation
 
 ## Installation
 1. Clone this repository.
-2. Run `bundle install && bower install && npm install' in the repository. You may need to use sudo.
+2. Run `bundle install` in the repository. You may need to use sudo.
 3. Run `jekyll build`.
 4. Configure your webserver to serve from `/{repo-dir}/_site/`
+
+### Previewing
+* Run `jekyll serve --watch` to build, serve and watch
+* Visit: [http://localhost:4000](http://localhost:4000)
 
 ## How it works
 This is a [Jekyll](http://jekyllrb.com/) site. It uses [Rouge](https://github.com/jneen/rouge) for syntax highlighting,
 but otherwise uses standard markdown provided by [Kramdown](http://kramdown.gettalong.org/).
+
+---
+
+## SCSS
+
+### Compiling and resources
+* Uses [Autoprefixer](https://github.com/ai/autoprefixer-rails) rails gem for vendor prefixes.
+	* Configuration is in `/config/autoprefixer.yaml`.
+	* [Browser support / configuration docs](https://github.com/postcss/autoprefixer#browsers) 
+* Uses [Suzy](http://susy.oddbird.net/) ruby gem for grid framework generation.
+
+---
 
 ## Hacking
 To make changes to the site, navigate to the root of the repository and execut `jekyll build --watch`. This will

@@ -15,12 +15,10 @@
 // Heads up! This reset may cause conflicts with some third-party widgets.
 // For recommendations on resolving such conflicts, see
 // http://getbootstrap.com/getting-started/#third-box-sizing
-* {
-	@include box-sizing(border-box);
-}
+*,
 *:before,
 *:after {
-	@include box-sizing(border-box);
+	box-sizing: border-box;
 }
 
 
@@ -34,9 +32,11 @@ html {
 body {
 	font-family: $font-family-base;
 	font-size: $font-size-base;
+	font-weight: $font-weight;
 	line-height: $line-height-base;
 	color: $text-color;
 	background-color: $body-bg;
+	word-wrap: break-word;	// Keep long strings from borking mobile
 }
 
 // Reset fonts for relevant elements

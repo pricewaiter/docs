@@ -1,27 +1,38 @@
-.grid-row {
-	@include clearfix();
-	position: relative;
-	margin-left: (-$grid-gutter-width / 2);
-	margin-right: (-$grid-gutter-width / 2);
-}
-.column {
-	float: left;
-	padding-left: ($grid-gutter-width / 2);
-	padding-right: ($grid-gutter-width / 2);
-}
-.column-dark {
-	background-color: $brown;
-	color: #fff;
-	width: 50%;
-}
-.column-light {
-	width: 50%;
+.container {
+	@include container();
 }
 
-@media (max-width: $screen-sm-max) {
-	.column-dark,
-	.column-light {
-		float: none;
-		width: auto;
-	}
+.row {
+	@include clearfix();
+	position: relative;
+	margin-left: (gutter() * -1);
+	margin-right: (gutter() * -1);
 }
+
+.column {
+	padding-left: gutter();
+	padding-right: gutter();
+}
+
+.extend {
+	position: relative;
+	margin-left: (gutter() * -1);
+	margin-right: (gutter() * -1);
+}
+
+
+.column-light,
+.column-dark {
+	@extend .column;
+}
+
+// @media (min-width: $screen-md) {
+// 	.column-dark {
+// 		background-color: $tan;
+// 		color: #fff;
+// 		@include span(last 6);
+// 	}
+// 	.column-light {
+// 		@include span(6);
+// 	}
+// }

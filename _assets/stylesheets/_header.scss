@@ -1,0 +1,89 @@
+// Header
+// ------
+
+.site-header {
+    z-index: 10;
+
+    .brand {
+        float: left;
+        max-width: 118px;
+    }
+
+    .slogan {
+        color: $tan-dark;
+        display: inline-block;
+        padding-left: 18px;
+        padding-top: 12px;
+        text-shadow: 0 0 -1px rgba(0,0,0,0.3);
+    }
+
+    .header-top {
+        @extend .container;
+        background: $brown url(image-path("header_bg@2x.png")) repeat-x 50% 100%;
+        background-size: 21.5px (158px/2px);
+        padding: 14px gutter();
+    }
+
+    .header-drapes {
+        background: url(image-path("header_drape@2x.png")) repeat-x 50% 0;
+        background-size: 21.5px 11px;
+        height: 11px;
+
+    }
+
+    @media (max-width: $screen-sm-max) {
+        .header-top {
+            padding: 8px gutter();
+        }
+        .slogan {
+            display: none;
+        }
+    }
+
+    @media (max-width: $screen-sm) {
+        .brand {
+            max-width: 80px;
+        }
+    }
+}
+
+// Top Nav
+// -------
+
+.topnav {
+    float: right;
+    margin-top: 4px;
+
+    li {
+        display: inline-block;
+        padding: 0 0 0 10px;
+    }
+
+    a {
+        color: #fff;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        padding: 4px 0;
+        transition: all 0.2s linear;
+
+        &:hover {
+            color: $blue;
+            text-decoration: none;
+        }
+
+        &.outlined {
+            border: 1px solid #fff;
+            border-radius: 3px;
+            padding-left: 8px;
+            padding-right: 8px;  
+
+            &:hover {
+                border-color: $blue;
+            }
+        }
+    }
+
+    @media (min-width: $screen-sm) {
+        margin-top: 10px;
+    }
+}

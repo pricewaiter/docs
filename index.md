@@ -3,14 +3,51 @@ layout: default
 title: "PriceWaiter Developer Documentation"
 ---
 
-## [Getting Started]({{ site.baseurl }}/tut/widget-quickstart.html)
-Check out the getting started guide to setup with widget on your site.
+## Installing the PriceWaiter button on your e-commerce product pages is easy!
 
-## [Api Ref]({{ site.baseurl }}/ref/api-reference.html)
-Check out the API refrence to learn more about some of PriceWaiters advanced features.
+We have ready-to-go plugins for many popular e-commerce platforms. See our [integrations list](https://www.pricewaiter.com/integrations/) to see if your platform is supported.
 
-## [Widget Documentation]({{ site.baseurl }}/doc/widget-documentation.html)
-Read through the widget documenation to understand how PriceWaiter works.
+A custom install is easy to perform with a few small pieces of HTML and Javascript:
 
-## [Other Documentation]({{ site.baseurl}}/dwn/other-documentation.html)
-Here is some other documentation that may or may not be helpful or relevant.
+
+### Step One
+
+First put a PriceWaiter placeholder where you'd like the button to appear on the page:
+
+{% highlight html %}
+<span id="pricewaiter"></span>
+{% endhighlight %}
+
+### Step Two
+
+Then include the script block to configure the button:
+
+{% highlight javascript %}
+<script>
+var PriceWaiterOptions = {
+
+    // Configure the product the Name Your Price widget applies to.
+    product: {
+        sku: 'EXAMPLE-1234',
+        name: 'Left-handed Smoke Shifter',
+        image: 'http://lorempixel.com/output/business-q-c-640-480-9.jpg',
+        price: '19.99'
+    },
+
+    button: {
+        size: 'lg',
+        color: '#97c0e6',
+        hoverColor: '#6d9fd6'
+    }
+
+};
+</script>
+{% endhighlight %}
+
+### Step Three
+
+Then, include this code at the bottom of the page to load the button:
+
+{% highlight html %}
+<script src="https://widget.pricewaiter.com/script/<your api key here>.js" async></script>
+{% endhighlight %}

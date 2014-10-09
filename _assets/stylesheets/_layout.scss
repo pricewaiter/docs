@@ -13,7 +13,7 @@
 	@extend .column;
 }
 
-@media (min-width: $screen-md-max) {
+@media (min-width: $screen-md) {
 	.site-header {
 		position: fixed;
 	    top: 0;
@@ -40,5 +40,53 @@
 	.site-footer {
 		margin-left: $sidebar-width;
 		padding-left: $sidebar-offset;
+	}
+}
+
+// Responsive visibility
+// ---------------------
+
+.hidden,
+.visible-sm,
+.visible-md,
+.visible-lg,
+.visible-xl {
+	display: none;
+}
+
+.visible {
+	display: block
+}
+
+@media (max-width: $screen-sm-max) {
+	.visible-sm {
+		display: block !important;
+	}
+	.hidden-sm {
+		display: none;
+	}
+}
+@media (min-width: $screen-md) and (max-width: $screen-md-max) {
+	.visible-md {
+		display: block !important;
+	}
+	.hidden-md {
+		display: none;
+	}
+}
+@media (min-width: $screen-lg) and (max-width: $screen-lg-max) {
+	.visible-lg {
+		display: block !important;
+	}
+	.hidden-lg {
+		display: none;
+	}
+}
+@media (min-width: $screen-xl) {
+	.visible-xl {
+		display: block !important;
+	}
+	.hidden-xl {
+		display: none;
 	}
 }

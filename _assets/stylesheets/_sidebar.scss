@@ -3,10 +3,57 @@
 
 .content-sidebar {
 	background: $link-color;
+
+	@media (max-width: $screen-md) {
+		margin-top: -10px;
+	}
 }
 
 
+// Mobile Nav Toggle
+// -----------------
+
+.nav-toggle-wrap {
+    a {
+        border: 1px solid $link-color;
+        border-radius: 3px;
+        color: #fff;
+        cursor: pointer;
+        display: block;
+        text-decoration: none;
+        padding: 4px 0;
+
+        @include clearfix();
+
+        &:hover {
+        	text-decoration: none;
+        }
+    }
+
+    .label {
+        font-weight: $font-weight-bold;
+        font-size: 1.1em;
+        display: inline-block;
+        padding-top: 3px;
+        vertical-align: middle;
+    }
+
+    .hamburger {
+        float: right;
+        width: 26px;
+
+        > span {
+            background: #fff;
+            display: block;
+            height: 3px;
+            margin: 5px 0;
+        }
+    }
+}
+
 // Navigation
+// ----------
+
 .sidenav {
 	margin: 0 (gutter() * -1) 20px (gutter() * -1);
 

@@ -9,7 +9,7 @@ module Jekyll
         ext = basename[/\.[a-z]+$/, 0]
         slug = basename.sub(ext, '')
 
-        "\n\n<a name=\"#{slug}\"></a>\n\n" + super
+        "\n\n<article class=\"doc-item\"><a name=\"#{slug}\"></a>\n\n" + super + "\n\n</article>"
       end
     end
   end

@@ -1,5 +1,6 @@
 ---
 title: "clearMetadata(key)"
+nav_title: "clearMetadata()"
 ---
 
 Bulk set metadata about this product or visitor.

@@ -1,11 +1,3 @@
 source "https://rubygems.org"
 gem 'jekyll'
-gem 'rouge'
-gem 'jekyll-assets'
-gem 'susy'
-gem 'compass'
-gem 'compass-normalize'
-gem 'capistrano'
-gem 'rake'
-gem 'stemmer'
-gem 'autoprefixer-rails'
+gem 'github-pages'

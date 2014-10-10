@@ -1,10 +1,5 @@
 _site
 .idea
-.sass-cache
 .bundle
 .DS_Store
-node_modules
-npm-debug.log
-bower_components
-/css/*.css
-vendor
+*.log

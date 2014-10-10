@@ -4,18 +4,25 @@
         {% assign attr = section[0] %}
         {% assign label = section[1] %}
 
-        {% for page in site.categories[attr] %}
-            <li data-order="{{ page.order }}"><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
-                {% capture dir %}_includes/{{attr}}{% endcapture %}
+        {% for nav_item in site.categories[attr] %}
+            <li data-order="{{ nav_item.order }}"><a href="{{ site.baseurl }}{{ nav_item.url }}">{{ nav_item.title }}</a>
+
+                {% if nav_item.url == page.url or (page.collection == 'platforms' and nav_item.category == 'platforms') %}
                 <ul>
-                {% directory path: {{dir}} %}
-                    <li><a href="{{ site.baseurl }}{{ page.url }}#{{ file.slug }}">{{ file.slug }}</a></li>
-                {% enddirectory %}
+                {% for item in site[attr] %}
+
+                    {% if attr == 'platforms' %}
+                    <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
+                    {% else %}
+                    <li><a href="{{ site.baseurl }}{{ nav_item.url }}#{{ item.relative_path }}">{{ item.title }}</a></li>
+                    {% endif %}
+
+                {% endfor %}
                 </ul>
+                {% endif %}
+
             </li>
         {% endfor %}
 
     {% endfor %}
-<!-- List additional links. It is recommended to add a divider
-    e.g. <li class=divider></li> first to break up the content. -->
 </ul>

@@ -9,6 +9,6 @@ Sets/gets an object of the current products avialable options or variants.
 // Setting multiple options or variants at once.
 PriceWaiter.ProductOptions({
     size: 'Large',
-    color, 'Mayonnaise'
+    color: 'Mayonnaise'
 });
 {% endhighlight%}

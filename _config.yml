@@ -15,10 +15,16 @@ codeurl: 'https://www.pricewaiter.com'
 
 # Default categories (in order) to appear in the navigation
 sections: [
-    ['doc', 'Documentation'],
-    ['ref', 'Reference'],
-    ['dwn', 'Other Documentation']
+    ['widget', 'Documentation'],
+    ['api', 'Reference'],
+    ['platforms', 'Platforms']
 ]
+
+collections:
+  widget:
+  api:
+  platforms:
+    output: true
 
 # Keep as an empty string if served up at the root. If served up at a specific
 # path (e.g. on GitHub pages) leave off the trailing slash, e.g. /my-project
@@ -27,25 +33,10 @@ baseurl: ''
 # Dates are not included in permalinks
 permalink: none
 
-# Syntax highlighting
-highlighter: rouge
+safe: true
 
 # Since these are pages, it doesn't really matter
 future: true
 
 # Exclude non-site files
-exclude: ['vendor','bin', 'README.md','deploy.sh','node_modules','Gemfile*']
-
-# Use the kramdown Markdown renderer
-markdown: kramdown
-
-kramdown:
-  input: GFM
-  parse_block_html: true
-
-#Site Vars
-doc_row: 'row'
-
-doc_col_light: 'column column-light'
-
-doc_col_dark: 'column column-dark'
+exclude: ['README.md', 'Gemfile*']

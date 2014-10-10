@@ -22,7 +22,7 @@ First put a PriceWaiter placeholder where you'd like the button to appear on the
 
 Then include the script block to configure the button:
 
-{% highlight javascript %}
+{% highlight html %}
 <script>
 var PriceWaiterOptions = {
 

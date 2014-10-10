@@ -2,4 +2,5 @@ _site
 .idea
 .bundle
 .DS_Store
+.sass-cache
 *.log

@@ -7,7 +7,7 @@ Set the currency that will be used for the offer. The effect will be to show the
 |--------|-------------|--------|---------------|
 | Option | Description | Values | Default Value |
 |--------|-------------|--------|---------------|
-| currency (string) | Currency to be used for the offer. | Any valid ISO-4217 currency code | VEF|
+| currency (string) | Currency to be used for the offer. | Any valid ISO-4217 currency code | USD |
 
 {% highlight javascript %}
 var PriceWaiterOptions = {

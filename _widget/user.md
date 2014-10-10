@@ -14,8 +14,8 @@ Optionally, you can pass information about the current user if they are logged i
 var PriceWaiterOptions = {
     // Not shown: apiKey and other required options
     user:  {
-        name: 'Joe Brown',
-        email: 'joe@domainname.com'
+        name: 'John Doe',
+        email: 'handle@domain.com'
     }
 }
 {% endhighlight %}

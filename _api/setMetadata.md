@@ -7,5 +7,5 @@ Sets/gets metadata. __Tip:__ use a url-friendly key name, as this will be POSTed
 
 {% highlight javascript %}
 // Example to pass along an affiliate code
-PriceWaiter.setMetadata('affiliate_code', 'nike_air2');
+PriceWaiter.setMetadata('affiliate_id', '1234AOUFA',);
 {% endhighlight%}

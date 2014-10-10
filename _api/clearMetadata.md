@@ -3,16 +3,11 @@ title: "clearMetadata(key)"
 nav_title: "clearMetadata()"
 ---
 
-Unsets a metadata option set using [__setMetadata__](#_api/setMetadata.md)
-
-`IS setMetadataValues an API option???`
+Unsets a metadata option set using [__setMetadata__](#_api/setMetadata.md) or [__setMetadataValues__](#_api/setMetadataValues.md)
 
 {% highlight javascript %}
 // Example setting metadata
-PriceWaiter.setMetadataValues({
-    affiliate_id: '1234AOUFA',
-    referer: 'pinterest'
-});
+PriceWaiter.setMetadata('referer', 'pinterest',);
 
 // Unsets a metadata key
 PriceWaiter.clearMetadata('referer');

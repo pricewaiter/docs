@@ -40,3 +40,6 @@ future: true
 
 # Exclude non-site files
 exclude: ['README.md', 'Gemfile*']
+
+sass:
+    style: :compressed

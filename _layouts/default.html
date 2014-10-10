@@ -8,10 +8,7 @@
         <title>{{ site.title }}{% if page.title and page.title != site.title %} : {{ page.title }}{% endif %}</title>
         <meta name="description" content="{{ site.subtitle }}">
 
-        <link rel="stylesheet" href="/css/theme.css">
-
-        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script src="/js/docs.js"></script>
+        <link rel="stylesheet" href="/css/theme.css?bust={{ site.time | date_to_xmlschema | cgi_escape }}">
     </head>
     <body>
 
@@ -47,4 +44,6 @@
 
         {% include footer.html %}
     </body>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="/js/docs.js?bust={{ site.time | date_to_xmlschema | cgi_escape }}"></script>
 </html>

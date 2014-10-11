@@ -39,6 +39,7 @@ strong, b {
 code {
     background-color: lighten($blue, 20%);
     border-radius: 3px;
+    border: 1px solid lighten($blue, 10%);
     display: inline-block;
     vertical-align: middle;
     font-family: $font-family-monospace;

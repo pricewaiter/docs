@@ -1,5 +1,5 @@
 ---
-title: onLoad
+title: onLoad()
 ---
 
 Since PriceWaiter is loaded asynchronously, it might not be available right when you start setting up your page. By adding a hook in here, you can update PriceWaiter when, for example, the user changes the product configuration.

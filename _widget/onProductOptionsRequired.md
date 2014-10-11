@@ -1,5 +1,5 @@
 ---
-title: "onProductOptionsRequired"
+title: "onProductOptionsRequired()"
 ---
 
 If you have used setProductOptionRequired to mark a product option as required, this callback is fired when the user clicks the Name Your Price button without supplying all required product options. If not specified, PriceWaiter will use window.alert() to prompt the user to provide all the missing options.

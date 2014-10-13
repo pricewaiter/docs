@@ -70,6 +70,11 @@
 		}
 	}
 
+    em {
+        color: lighten($blue, 8%);
+        font-style: normal;
+    }
+
 	> ul > li > a {
 		background: darken($link-color, 10%);
 		font-weight: bold;

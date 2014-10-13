@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Volusion Integration Guide"
+nav_title: "Volusion <em>(Guide)</em>"
 ---
 
 Adding the Widget Code

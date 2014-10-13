@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "BigCommerce Integration Guide"
+nav_title: "BigCommerce <em>(Guide)</em>"
 ---
 
 Adding the Widget Code

@@ -38,7 +38,7 @@ Process Order
 * Process the order data as needed from step 1.
 
 |           Field           | Example                     | Notes                                 |
-|:-------------------------:|-----------------------------|---------------------------------------|
+|---------------------------|-----------------------------|---------------------------------------|
 | pricewaiter_id            |                             | (string) PriceWaiter ID for the order |
 | store_id                  |                             | (string) PriceWaiter ID for the store |
 | api_key                   | 3kjsdf023lskjdf902lksjdf934 | (string) API Key assigned to the site |

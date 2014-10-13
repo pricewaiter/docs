@@ -47,3 +47,10 @@ code {
     padding-left: 4px;
     padding-right: 4px;
 }
+
+.page-header {
+  + p {
+    font-size: 1.3em;
+    line-height: 1.3em;
+  }
+}

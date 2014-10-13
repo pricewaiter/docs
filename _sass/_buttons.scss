@@ -1,0 +1,78 @@
+@mixin btnVariant($bgColor, $bgColorHover, $color: #fff, $colorHover: #fff) {
+    color: $color;
+    background: $bgColor;
+    border: 2px solid $bgColor;
+
+    &:hover {
+        color: $colorHover;
+        background: $bgColorHover;
+        border-color: $bgColorHover;
+    }
+
+    // Outline variant
+    &.btn-outline {
+        color: $bgColor;
+        background: transparent;
+        border: 2px solid $bgColor;
+
+        &:hover {
+            color: $bgColorHover;
+            background: transparent;
+            border-color: $bgColorHover;
+        }
+    }
+
+}
+
+.btn {
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    font-weight: $font-weight-bold;
+    padding: 4px 10px;
+    text-decoration: none;
+    transition: all 0.2s linear;
+    vertical-align: middle;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    + .btn {
+        margin-left: 10px;
+    }
+}
+
+
+.btn-sm {
+    font-size: 0.9em;
+    padding: 3px 6px;
+}
+
+.btn-lg {
+    font-size: 1.2em;
+    padding: 6px 14px;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+
+    + .btn-block {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+
+.btn-default {
+    @include btnVariant($tan-dark, lighten($tan-dark, 10%));
+}
+
+.btn-primary {
+    @include btnVariant($link-color, lighten($link-color, 10%));
+}
+
+.btn-secondary {
+    @include btnVariant($orange, lighten($orange, 10%));
+}

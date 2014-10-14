@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Platforms"
+title: "Platform Integrations"
 category: platforms
 date: 2014-08-04 12:12:24
 ---

@@ -5,9 +5,22 @@
         {% assign label = section[1] %}
 
         {% for nav_item in site.categories[attr] %}
+            {% assign showSubnav = false %}
             <li data-order="{{ nav_item.order }}"><a href="{{ site.baseurl }}{{ nav_item.url }}">{{ nav_item.title }}</a>
 
-                {% if nav_item.url == page.url or (page.collection == 'platforms' and nav_item.category == 'platforms') %}
+                {% if nav_item.url == page.url %}
+                    {% assign showSubnav = true %}
+                {% endif %}
+
+                {% if page.collection == 'misc' and nav_item.category == 'misc' %}
+                    {% assign showSubnav = true %}
+                {% endif %}
+
+                {% if page.collection == 'platforms' and nav_item.category == 'platforms' %}
+                    {% assign showSubnav = true %}
+                {% endif %}
+                
+                {% if showSubnav %}
                 <ul>
                 {% for item in site[attr] %}
 
@@ -16,7 +29,7 @@
                         {% assign title = item.nav_title %}
                     {% endif %}
 
-                    {% if attr == 'platforms' %}
+                    {% if attr == 'platforms' or attr == 'misc' %}
                     <li><a href="{{ site.baseurl }}{{ item.url }}">{{ title }}</a></li>
                     {% else %}
                     <li><a href="{{ site.baseurl }}{{ nav_item.url }}#{{ item.relative_path }}">{{ title }}</a></li>

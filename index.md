@@ -3,11 +3,20 @@ layout: default
 title: "PriceWaiter Developer Documentation"
 ---
 
-## Installing the PriceWaiter button on your e-commerce product pages is easy!
+# Getting Started with PriceWaiter
 
 We have ready-to-go plugins for many popular e-commerce platforms. See our [integrations list](https://www.pricewaiter.com/integrations/) to see if your platform is supported.
 
-A custom install is easy to perform with a few small pieces of HTML and Javascript:
+<center>
+    <a href="/platforms/a-magento.html" class="btn btn-primary btn-outline btn-lg">Magento Extension</a>
+    <a href="/platforms/a-shopify.html" class="btn btn-primary btn-outline btn-lg">Shopify App</a>
+</center>
+
+* * *
+
+## Getting started with a custom installation
+
+A custom install is easy to perform with a few small pieces of HTML and Javascript.
 
 
 ### Step One

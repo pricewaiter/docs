@@ -34,7 +34,7 @@ var PriceWaiterOptions = {
         size: 'lg' // or 'sm'
     },
     onLoad: function() {
-        PriceWaiter.setImage(ThumbURLs[0]);
+        PriceWaiter.setProductImage(ThumbURLs[0]);
         PriceWaiter.originalOpen = PriceWaiter.open;
         PriceWaiter.open = function() {
             // required options

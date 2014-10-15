@@ -16,23 +16,25 @@ PriceWaiter offical BigCommerce app is in the final development stages, but fear
 4. From the bottom, left had frame select __"Panels" > "ProductDetails.html"__
 5. Directly after the first HTML `</script>` tag, insert the following code:
 
-{% highlight javascript %}
-<!-- Begin PriceWaiter Code -->
-<script type="text/javascript"> 
+{% highlight html %}
+<!-- Begin PriceWaiter Options -->
+<script type="text/javascript">
 //<! [CDATA[
 var strPrice = "%%GLOBAL_ProductPrice%%";
+var addToPage = !document.getElementById('no_pricewaiter');
 var PriceWaiterOptions = {
-    apiKey: 'YOUR API KEY', // REPLACE "YOUR API KEY" YOUR STORE'S PW API KEY
+    addToPage: addToPage, // toggle button display
+    exit: addToPage, // toggle exit offers popup
     product: {
         sku: '%%GLOBAL_SKU%%',
         name: '%%GLOBAL_ProductName%%',
-        price: parseFloat(strPrice.replace(/[$,]+/g, "")),
-        image: ThumbURLs[0]
+        price: parseFloat(strPrice.replace(/[$,]+/g, ""))
     },
     button: {
-        size: 'sm' // SEE ONLINE DOCUMENTATION FOR WIDGET OPTIONS TO CHANGE BUTTON DEFAULT STYLE
+        size: 'lg' // or 'sm'
     },
     onLoad: function() {
+        PriceWaiter.setImage(ThumbURLs[0]);
         PriceWaiter.originalOpen = PriceWaiter.open;
         PriceWaiter.open = function() {
             // required options
@@ -73,7 +75,7 @@ var PriceWaiterOptions = {
 };
 //]]>
 </script>
-<!-- End PriceWaiter Code -->
+<!-- End PriceWaiter Options -->
 {% endhighlight %}
 
 <ol start="6">
@@ -81,23 +83,10 @@ var PriceWaiterOptions = {
 insert the following code:</li>
 </ol>
 
-{% highlight javascript %}
-<!-- Begin PriceWaiter Code -->
-<script type="text/javascript">//<! [CDATA[
-(function() {
-    if(document.getElementById('no_pricewaiter')) {
-        return false;
-    } else {
-        var pw = document.createElement('script');
-        pw.type = 'text/javascript';
-        pw.src = "https://widget.pricewaiter.com/nyp/script/widget.js";
-        pw.async = true;
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(pw, s);
-    }
-})();
-//]]></script>
-<!-- End PriceWaiter Code -->
+{% highlight html %}
+<!-- Begin PriceWaiter Script Include -->
+<script src="https://widget.pricewaiter.com/script/<your api key here>.js" async></script>
+<!-- End PriceWaiter Script Include -->
 {% endhighlight %}
 
 <ol start="7">

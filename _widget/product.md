@@ -21,7 +21,7 @@ var PriceWaiterOptions = {
         name: 'Product Name',
         description: 'Short description of the product',
         price: 99.99,
-        image: 'http:\/\/yourdomain.com/images\/path\/filename.jpg'
+        image: 'http://yourdomain.com/images/path/filename.jpg'
     }
 };
 {% endhighlight %}

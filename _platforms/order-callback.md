@@ -44,6 +44,8 @@ Process Order
 | store_id                  |                             | (string) PriceWaiter ID for the store |
 | store_name				|							  | (string) Name of the store as entered |
 | api_key                   | 3kjsdf023lskjdf902lksjdf934 | (string) API Key assigned to the site |
+| transaction_id            |                             | (string) Payment processor unique ID  |
+| payment_method            |                             | (string) Payment method               |
 | buyer_first_name          |                             | (string) Buyer's first name           |
 | buyer_last_name           |                             | (string) Buyer's last name            |
 | buyer_name                |                             | (string) Buyer's full name            |

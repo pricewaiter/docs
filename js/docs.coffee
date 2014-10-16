@@ -23,6 +23,8 @@
 
     # replace actual apikey if it's in localStorage
     apikey = window.localStorage?.getItem 'apikey'
+    apikey = (apikey ? '').replace(/[^a-zA-Z0-9]/g, '')
+
     if apikey
         $('code span').each (i, el) ->
             el.innerHTML = el.innerHTML.replace '&lt;your api key here&gt;', apikey

@@ -67,6 +67,14 @@ var PriceWaiterOptions = {
                 PriceWaiter.setQuantity(qtyNum);
             }
 
+            var sku = $('.ProductSKU .VariationProductSKU');
+            if (sku.length) {
+                var optionSku = sku.html().trim();
+                if (optionSku) {
+                    PriceWaiter.setSKU(optionSku);
+                }
+            }
+
             // actually open pricewaiter window
             PriceWaiter.originalOpen();
 

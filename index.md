@@ -8,7 +8,7 @@ title: "PriceWaiter Developer Documentation"
 We have ready-to-go plugins for many popular e-commerce platforms. See our [integrations list](https://www.pricewaiter.com/integrations/) to see if your platform is supported.
 
 <center>
-    <a href="/platforms/a-magento.html" class="btn btn-primary btn-outline btn-lg">Magento Extension</a>
+    <!-- <a href="/platforms/a-magento.html" class="btn btn-primary btn-outline btn-lg">Magento Extension</a> -->
     <a href="/platforms/a-shopify.html" class="btn btn-primary btn-outline btn-lg">Shopify App</a>
 </center>
 

@@ -24,6 +24,21 @@ The PriceWaiter Shopify app installs `snippets/pricewaiter.liquid` in your theme
 {% endraw %}
 {% endhighlight %}
 
+## Toggling Features
+
+You can turn on or off the button and Exit Offers feature with the following variables, set before including the `pricewaiter` snippet.
+
+{% highlight html %}
+{% raw %}
+{% assign pw_enable_button = false %}
+{% assign pw_enable_exit = true %}
+{% endraw %}
+{% endhighlight %}
+
+You can also disable the button per-product or per-collection by using our menu, near the save button on Product or Collections:
+
+<img src="/images/shopify-menu.jpg" alt="Example of Shopify Menu for Name your Price app." width="335" height="134">
+
 ## Configuring the button
 
 Our app provides a control panel in your Shopify Admin. From here you can control:

@@ -3,11 +3,12 @@ title: "clearMetadata(key)"
 nav_title: "clearMetadata()"
 ---
 
-Bulk set metadata about this product or visitor.
+Unsets a metadata option set using [__setMetadata__](#_api/setMetadata.md) or [__setMetadataValues__](#_api/setMetadataValues.md)
 
 {% highlight javascript %}
-	PriceWaiter.setMetadataValues({
-    affiliate_id: '1234AOUFA',
-    referer: 'pinterest'
-});
+// Example setting metadata
+PriceWaiter.setMetadata('referer', 'pinterest',);
+
+// Unsets a metadata key
+PriceWaiter.clearMetadata('referer');
 {% endhighlight%}

@@ -17,13 +17,16 @@ codeurl: 'https://www.pricewaiter.com'
 sections: [
     ['widget', 'Documentation'],
     ['api', 'Reference'],
-    ['platforms', 'Platforms']
+    ['platforms', 'Platforms'],
+    ['misc', 'Extra Functionality']
 ]
 
 collections:
   widget:
   api:
   platforms:
+    output: true
+  misc:
     output: true
 
 # Keep as an empty string if served up at the root. If served up at a specific

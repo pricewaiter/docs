@@ -5,13 +5,9 @@ nav_title: "setProductOptionRequired()"
 
 Mark one or more product options as "required". If an option is required the PriceWaiter UI will not be shown unless a value has been provided for that option via __setProductOption__.
 
-If the user clicks the __Name Your Price__ button without configuring all required product options, the __onProductOptionsRequired__ callback is fired, with an array of missing options passed as the first argument. If the callback has not been configured, the widget uses __window.alert()__ to ask the user to provide all required options.
+If the user clicks the __Name Your Price__ button without configuring all required product options, the [__onProductOptionsRequired__](/widget/documentation.html#_widget/onProductOptionsRequired.md) callback is fired, with an array of missing options passed as the first argument. If the callback has not been configured, the widget uses `window.alert()` to ask the user to provide all required options.
 
-To mark multiple different options as required, pass an Array as the __option__ argument.
-
-To mark options as no longer required, pass false as the __required__ argument
-
-NOTE: A product option will fail the "requirement" test if:
+__NOTE:__ A product option will fail the "requirement" test if:
 
 * Its value was never set or
 * Its value is equal to one of the following:
@@ -19,3 +15,32 @@ NOTE: A product option will fail the "requirement" test if:
 	* null
 	* '' (empty string)
 	* ' ' (empty string with whitespace)
+
+
+{% highlight javascript %}
+// Example setting a single option as required
+PriceWaiter.setProductOptionRequired('color');
+
+// Example setting multiple options as required
+PriceWaiter.setProductOptionRequired([
+    'color',
+    'size',
+    'fragrance'
+]);
+{% endhighlight%}
+
+#### Unsetting Required Options
+
+To mark options as no longer required, you can use [__clearProductOption__](#_api/clearProductOption.md), [__clearProductOptions__](#_api/clearProductOptions.md) or pass `false` as the __required__ argument _(see example)__
+
+{% highlight javascript %}
+// Example make 'color' not required
+PriceWaiter.setProductOptionRequired('color', false);
+
+// Example make multiple options not required
+PriceWaiter.setProductOptionRequired([
+    'color',
+    'size',
+    'fragrance'
+], false);
+{% endhighlight%}

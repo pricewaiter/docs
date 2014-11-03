@@ -12,9 +12,9 @@ PriceWaiter offical BigCommerce app is in the final development stages, but fear
 
 1. Login to your BigCommerce admin panel
 2. At the top of the page, navigate to __"Design"__
-3. In the gray __"Current Store Design"__ box, click __"Browse Template Files..."__
-4. From the bottom, left had frame select __"Panels" > "ProductDetails.html"__
-5. Directly after the first HTML `</script>` tag, insert the following code:
+3. In the gray __"Current Theme"__ box under __"Store Design"__, click __"Edit HTML/CSS"__
+4. From the bottom, left hand frame select __"Panels" > "ProductDetails.html"__
+5. Directly after the HTML `</script>` tags, insert the following code:
 
 {% highlight html %}
 <!-- Begin PriceWaiter Options -->
@@ -65,14 +65,6 @@ var PriceWaiterOptions = {
                 PriceWaiter.setPrice(basePrice);
                 var qtyNum = parseFloat(qty.val());
                 PriceWaiter.setQuantity(qtyNum);
-            }
-
-            var sku = $('.ProductSKU .VariationProductSKU');
-            if (sku.length) {
-                var optionSku = sku.html().trim();
-                if (optionSku) {
-                    PriceWaiter.setSKU(optionSku);
-                }
             }
 
             // actually open pricewaiter window

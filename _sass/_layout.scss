@@ -13,12 +13,21 @@
 	@extend .column;
 }
 
+img.right {
+    float: right;
+    margin-right: 25px;
+}
+
 @media (min-width: $screen-md) {
 	.site-header {
 		position: fixed;
 	    top: 0;
 	    width: 100%;
 	}
+
+    img.right {
+        margin-right: 50px;
+    }
 
 	.content-sidebar {
 		width: $sidebar-width;

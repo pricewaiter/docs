@@ -1,4 +1,3 @@
 source 'https://rubygems.org'
 
-gem 'github-pages', '~> 28'
-gem 'therubyracer', '~> 0.12.1'
+gem 'jekyll', '2.4.0'

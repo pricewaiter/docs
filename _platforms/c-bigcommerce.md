@@ -17,10 +17,8 @@ PriceWaiter offical BigCommerce app is in the final development stages, but fear
 5. Directly after the HTML `</script>` tags, insert the following code:
 
 {% highlight html %}
-<!-- Begin PriceWaiter Options -->
+<!-- Begin PriceWaiter Options and Script -->
 <script type="text/javascript">
-//<! [CDATA[
-var strPrice = "%%GLOBAL_ProductPrice%%";
 var addToPage = !document.getElementById('no_pricewaiter');
 var PriceWaiterOptions = {
     addToPage: addToPage, // toggle button display
@@ -28,68 +26,17 @@ var PriceWaiterOptions = {
     product: {
         sku: '%%GLOBAL_SKU%%',
         name: '%%GLOBAL_ProductName%%',
-        price: parseFloat(strPrice.replace(/[$,]+/g, ""))
+        price: "%%GLOBAL_ProductPrice%%"
     },
-    button: {
-        size: 'lg' // or 'sm'
-    },
-    onLoad: function() {
-        PriceWaiter.setProductImage(ThumbURLs[0]);
-        PriceWaiter.originalOpen = PriceWaiter.open;
-        PriceWaiter.open = function() {
-            // required options
-            var attributesValidated = $('#productDetailsAddToCartForm').validate().form();
-            if(!attributesValidated) {
-                return false;
-            }
-
-            // send all options to pricewaiter
-            var requiredElements = $('#productDetailsAddToCartForm').validate().currentElements;
-            for(var i=0; i < requiredElements.length; i++) {
-                var radioSet = document.getElementsByName(requiredElements[i].name);
-                for(var j=0; j < radioSet.length; j++) {
-                    if(radioSet[j].checked) {
-                        var parentRow = $(radioSet[j]).parents('div.productAttributeRow');
-                        var name = parentRow.find('span.name').html().trim().replace(/[:]/, "");
-                        var value = $(radioSet[j]).next().html();
-                        PriceWaiter.setProductOption(name, value);
-                        break;
-                    }
-                }
-            }
-
-            // grab quantity before opening PW lightbox
-            var qty = $('#qty_');
-            if(qty.length) {
-                var basePrice = parseFloat($('em.ProductPrice').html().replace(/[$,]+/g, "").trim());
-                PriceWaiter.setPrice(basePrice);
-                var qtyNum = parseFloat(qty.val());
-                PriceWaiter.setQuantity(qtyNum);
-            }
-
-            // actually open pricewaiter window
-            PriceWaiter.originalOpen();
-
-        }
-    }
+    onButtonClick: 'pwBigcommerceValidate',
+    onload: 'pwBigcommerceOnLoad'
 };
-//]]>
 </script>
-<!-- End PriceWaiter Options -->
+<script src="https://widget.pricewaiter.com/script/<your api key here>.js" async></script>
+<!-- End PriceWaiter Options and Script -->
 {% endhighlight %}
 
 <ol start="6">
-    <li>Near the end of the page, before the template tag <code>%%Panel.SimilarProductsByCustomerViews%%</code>,
-insert the following code:</li>
-</ol>
-
-{% highlight html %}
-<!-- Begin PriceWaiter Script Include -->
-<script src="https://widget.pricewaiter.com/script/<your api key here>.js" async></script>
-<!-- End PriceWaiter Script Include -->
-{% endhighlight %}
-
-<ol start="7">
     <li>Click <strong>"Save"</strong></li>
     <li>From the bottom-left hand frame select <strong>"Snippets" > "ProductAddToCart.html"</strong></li>
     <li>Just after the template tag <code>%%GLOBAL_AddToCartButtonOptimizerNoScriptTag%%</code>, add the following

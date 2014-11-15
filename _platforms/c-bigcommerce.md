@@ -19,17 +19,12 @@ PriceWaiter offical BigCommerce app is in the final development stages, but fear
 {% highlight html %}
 <!-- Begin PriceWaiter Options and Script -->
 <script type="text/javascript">
-var addToPage = !document.getElementById('no_pricewaiter');
 var PriceWaiterOptions = {
-    addToPage: addToPage, // toggle button display
-    exit: addToPage, // toggle exit offers popup
     product: {
         sku: '%%GLOBAL_SKU%%',
         name: '%%GLOBAL_ProductName%%',
         price: "%%GLOBAL_ProductPrice%%"
-    },
-    onButtonClick: 'pwBigcommerceValidate',
-    onload: 'pwBigcommerceOnLoad'
+    }
 };
 </script>
 <script src="https://widget.pricewaiter.com/script/<your api key here>.js" async></script>
@@ -50,3 +45,34 @@ var PriceWaiterOptions = {
 </div>
 <!-- End PriceWaiter Widget Button -->
 {% endhighlight %}
+
+## Disable PriceWaiter on specific products
+
+For each product that you don't want the PriceWaiter button to appear on, follow these steps.
+
+1. Go go edit a single product "Products" > "View Products"
+2. In the product description box, click the "HTML" button to edit the HTML Source of the description.
+3. Place one of the following codes anywhere in the box:
+4. Click "Update" and then save your product.
+
+#### No PriceWaiter button
+{% highlight html %}
+<!-- Begin Disable PriceWaiter Widget On This Page -->
+<span id="no_pricewaiter_button" style="display: none;">&nbsp;</span>
+<!-- End Disable PriceWaiter Widget On This Page -->
+{% endhighlight %}
+
+#### No PriceWaiter conversion tools (Exit Intent Offers, etc)
+{% highlight html %}
+<!-- Begin Disable PriceWaiter Widget On This Page -->
+<span id="no_pricewaiter_conversion_tools" style="display: none;">&nbsp;</span>
+<!-- End Disable PriceWaiter Widget On This Page -->
+{% endhighlight %}
+
+#### No PriceWaiter features at all (button and conversion tools off)
+{% highlight html %}
+<!-- Begin Disable PriceWaiter Widget On This Page -->
+<span id="no_pricewaiter" style="display: none;">&nbsp;</span>
+<!-- End Disable PriceWaiter Widget On This Page -->
+{% endhighlight %}
+

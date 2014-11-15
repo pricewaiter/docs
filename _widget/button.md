@@ -3,6 +3,7 @@ title: Button
 ---
 
 Control the look and feel of the Name Your Price button on your website.
+These settings are also easily changed in your [PriceWaiter account](https://manage.pricewaiter.com/store/button).
 
 |--------|-------------|--------|---------------|
 | Option | Description | Values | Default Value |

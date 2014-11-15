@@ -41,12 +41,6 @@ var PriceWaiterOptions = {
         name: 'Left-handed Smoke Shifter',
         image: 'http://lorempixel.com/output/business-q-c-640-480-9.jpg',
         price: '19.99'
-    },
-
-    button: {
-        size: 'lg',
-        color: '#97c0e6',
-        hoverColor: '#6d9fd6'
     }
 
 };

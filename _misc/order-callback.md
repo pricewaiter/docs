@@ -38,8 +38,8 @@ Data Fields
 | payment_method            | authorize_net               | (string) Name of payment processor    |
 | buyer_first_name          | Ned                         | (string)                              |
 | buyer_last_name           | Flanders                    | (string)                              |
-| buyer_name                | Ned Flanders                | (string) Buyers full name             |
-| buyer_email               | ned@example.com             | (string) Buyers email address         |
+| buyer_name                | Ned Flanders                | (string) Buyer's full name            |
+| buyer_email               | ned@example.com             | (string) Buyer's email address        |
 | buyer_shipping_name       |                             | (string) Ship to full name            |
 | buyer_shipping_first_name | Ned                         | (string)                              |
 | buyer_shipping_last_name  | Flanders                    | (string)                              |
@@ -49,7 +49,7 @@ Data Fields
 | buyer_shipping_city       |                             | (string) Ship to city                 |
 | buyer_shipping_state      | TN                          | (string) 2-letter state abbreviation  |
 | buyer_shipping_zip        | 12345                       | (string) US zip code                  |
-| buyer_shipping_phone      | 425-555-1212                | (string) Buyers phone number          |
+| buyer_shipping_phone      | 425-555-1212                | (string) Buyer's phone number         |
 | buyer_shipping_country    | US                          | (string) 2-letter country code        |
 | buyer_billing_name        | Ned Flanders                | (string) Bill to full name            |
 | buyer_billing_first_name  | Ned                         | (string) Bill to first name           |

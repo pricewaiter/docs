@@ -18,15 +18,6 @@ PriceWaiter offical BigCommerce app is in the final development stages, but fear
 
 {% highlight html %}
 <!-- Begin PriceWaiter Options and Script -->
-<script type="text/javascript">
-var PriceWaiterOptions = {
-    product: {
-        sku: '%%GLOBAL_SKU%%',
-        name: '%%GLOBAL_ProductName%%',
-        price: "%%GLOBAL_ProductPrice%%"
-    }
-};
-</script>
 <script src="https://widget.pricewaiter.com/script/<your api key here>.js" async></script>
 <!-- End PriceWaiter Options and Script -->
 {% endhighlight %}

@@ -7,7 +7,7 @@ Since PriceWaiter is loaded asynchronously, it might not be available right when
 |--------|-------------|--------|---------------|
 | Option | Description | Values | Default Value |
 |--------|-------------|--------|---------------|
-|onLoad (function)| A custom function you can specify to be executed when the user clicks the 'Name Your Price' button without selecting all required product options. | n/a | none |
+|onLoad (function)| A custom function to execute after the PriceWaiter Javascript API and button are available. | n/a | none |
 
 {% highlight javascript %}
 var PriceWaiterOptions = {

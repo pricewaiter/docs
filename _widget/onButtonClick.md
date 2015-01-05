@@ -7,12 +7,15 @@ Add a hook in here to do custom validation before showing the PriceWaiter UI to 
 {% highlight javascript %}
 var PriceWaiterOptions = {
     // Not shown: apiKey and other required options
-    onButtonClick: function() {
+    onButtonClick: function(PriceWaiter, platformOnButtonClick) {
         // Your custom function(s) here
         if (!$('.i-agree').is(':checked')) {
             // NOTE: You must return an explicit false (not 0, null, or "") to prevent the PriceWaiter UI from being shown.
             return false;
         }
+
+        // allow platform integration code to handle common cases
+        return platformOnButtonClick();
     }
 }
 {% endhighlight %}

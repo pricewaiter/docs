@@ -1,6 +1,7 @@
 ---
 layout: page
-title: "Widget Documentation"
+title: "Widget Configuration"
+description: "How to setup the Name Your Price button for e-commerce stores."
 category: widget
 date: 2014-07-31 15:56:31
 ---

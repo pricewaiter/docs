@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "PriceWaiter Developer Documentation"
+description: "Quick Start Guide"
 ---
 
 # Getting Started with PriceWaiter

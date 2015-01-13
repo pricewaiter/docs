@@ -42,7 +42,7 @@ safe: true
 future: true
 
 # Exclude non-site files
-exclude: ['README.md', 'Gemfile*']
+exclude: ['README.md', 'Gemfile*','vendor']
 
 sass:
     style: :compressed

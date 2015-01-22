@@ -20,4 +20,4 @@ Variable display sensitvity has 4 levels shown in the table below. The options r
 | time on page | 30 sec | 15 sec | 5 sec | 2 sec | 
 | returning visitor | false | false | true | true |
 
-If you want to temporarily disable Exit Intent Offers you can pass the variable pw_disable_conversion_tools = 1 and it will disable exit intent for 24 hours.
+If you want to temporarily disable Exit Intent Offers you can pass the variable pw_disable_conversion_tools = 1 and it will disable exit intent for 24 hours. Passing pw_disable_conversion_tools will create a cookie on the users web browser so they don't see exit intent again.

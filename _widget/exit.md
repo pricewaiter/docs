@@ -2,23 +2,22 @@
 title: Exit Intent Offers
 ---
 
+Exit Intent Offers allow you to target comparison shoppers as they attempt to leave your website.
 
-__Features:__
+Some of the features include:
 
-- A/B testing: display evenly 
+- A/B testing: display evenly
 - optimize for clicks
-- Display sensitivity
+- Archive campaigns
+- Campaign Date Range
+- Variable Display sensitivity
+
+Variable display sensitvity has 4 levels shown in the table below. The options range from conservative to aggressive.
 
 | property | level 1 | level 2 | level 3 | level 4 |
 |-------------|----------|----------|-----------|----------|
-| `max views` | 1 | 2 | 3 | 4 |
-| `time on page` | 30 sec | 15 sec | 5 sec | 2 sec | 
-| `returning visitor` | false | false | true | true |
-	
+| max views | 1 | 2 | 3 | 4 |
+| time on page | 30 sec | 15 sec | 5 sec | 2 sec | 
+| returning visitor | false | false | true | true |
 
-- Archive campaigns
-- Campaign Date Range
-- query string to disable for 24 hours `pw_disable_conversion_tools=1`
-- only show button after exit for 24 hours
-- Remove `beta` status/badges
-- Remove advanced code editor, just use images
+If you want to temporarily disable Exit Intent Offers you can pass the variable pw_disable_conversion_tools = 1 and it will disable exit intent for 24 hours.

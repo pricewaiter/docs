@@ -78,4 +78,5 @@ Data Fields
 | product_option_value2,	| e.g. "Large, "Green"		  |                                       |
 | product_option_value<N>	| e.g. "Large, "Green"		  |										  |
 | metadata_<KEY>            |                             | (string) value of metadata properties |
+| currency                  | e.g. "USD"                  | (string)Any valid ISO-4217 currency code|
 |---------------------------|-----------------------------|---------------------------------------|

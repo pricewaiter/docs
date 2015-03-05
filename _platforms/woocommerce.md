@@ -10,7 +10,7 @@ The official PriceWaiter plugin for WooCommerce will have you selling more in no
 
 ## Getting Started
 
-Install and activate the PriceWaiter Plugin.
+Install and activate the PriceWaiter Plugin.<br>
 __If you ALREADY have a PriceWaiter account__, skip to [configuration with existing PriceWaiter account](#woo-has-account).
 
 <a id="woo-no-account"></a>
@@ -43,7 +43,7 @@ __If you ALREADY have a PriceWaiter account__, skip to [configuration with exist
 
 ## Settings Reference
 
-The following settings can be found in your PriceWaiter account under Store > Advanced<br>
+The following settings can be found in your [PriceWaiter account](https://manage.pricewaiter.com) under Store > Advanced<br>
 _(These will be configured automatically if you signed up within the PriceWaiter WooCommerce plugin.)_
 
 __Checkout Redirect__:
@@ -58,3 +58,29 @@ __Order Notification API__:
 * check "Enable order notifications"
 * url: `https://YOURDOMAIN.COM/pricewaiter-api/ipn`
 * click "Save"
+
+* * *
+
+## Configuration Screen Shots
+
+#### WooCommerce API Access
+
+<img src="/images/woo/configure-step-1.png" alt="Grant API access" width="766" height="504">
+
+#### Select a PriceWaiter Package
+
+<img src="/images/woo/configure-step-2.png" alt="Select PriceWaiter Package" width="775" height="482">
+
+#### Create Your PriceWaiter Account
+
+You need the API key from your PriceWaiter account for your WooCommerce settings.
+
+<img src="/images/woo/configure-step-3.png" alt="Grant API access" width="656" height="858">
+
+#### Save your API Key and Configure Additional Settings
+
+<img src="/images/woo/configure-step-4.png" alt="Save your API Key and Configure Additional Settings" width="872" height="588">
+
+#### Per Product PriceWaiter Options
+
+<img src="/images/woo/product-fields.png" alt="Per Product PriceWaiter Options" width="1007" height="489">

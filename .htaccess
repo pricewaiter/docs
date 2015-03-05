@@ -1,0 +1,2 @@
+# 404 Page Handler
+ErrorDocument 404 /404.html

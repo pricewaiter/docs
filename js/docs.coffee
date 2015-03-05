@@ -47,8 +47,6 @@
         if !hashEl.length
             return
 
-        console.log headerHeight
-
         $('html, body').animate({
             scrollTop: Math.round hashEl.offset().top - headerHeight
         }, 400)

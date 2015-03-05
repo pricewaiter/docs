@@ -17,8 +17,15 @@ img.right {
     float: right;
     margin-right: 25px;
 }
+#hidden-mobile {
+	display: none;
+}
 
 @media (min-width: $screen-md) {
+	#hidden-mobile {
+		display: block;
+		height: 1px;
+	}
 	.site-header {
 		position: fixed;
 	    top: 0;
@@ -44,10 +51,14 @@ img.right {
 		margin-left: ($sidebar-width + $sidebar-offset);
 		padding-left: 0;
 		padding-top: 90px; // Header +
+		padding-bottom: 100px;
 	}
 
 	.site-footer {
-		margin-left: $sidebar-width;
+		position: fixed;
+		bottom: 0;
+		left: $sidebar-width;
+		right: 0;
 		padding-left: $sidebar-offset;
 	}
 }

@@ -2,6 +2,8 @@
 ---
 (($) ->
 
+    
+
     # Tables get borked on mobile, put them in a wrapper
     $('table').wrap('<div class="table-wrap"></div>')
 
@@ -30,6 +32,38 @@
             el.innerHTML = el.innerHTML.replace '&lt;your api key here&gt;', apikey
             el.innerHTML = el.innerHTML.replace 'YOUR API KEY', apikey
 
+    # Scroll to considering header
+    scrollToHash = (el) ->
+        hash = el.split '#'
+        headerHeight = $('.site-header').height()
+
+        if ($('#hidden-mobile').is(':hidden'))
+            headerHeight = 0 
+
+        hashEl = $('a[name="' + hash[1] + '"]')
+        if !hashEl.length 
+            hashEl = $('#' + hash[1])
+
+        if !hashEl.length
+            return
+
+        console.log headerHeight
+
+        $('html, body').animate({
+            scrollTop: Math.round hashEl.offset().top - headerHeight
+        }, 400)
+
+        window.location.hash = hash[1]
+        false
+
+    $('[href*="#"]').click ->
+        scrollToHash($(this).attr('href'))
+
+    $(document).ready ->
+        if window.location.hash
+            scrollToHash(window.location.hash)
+
     return
+
 
 ) jQuery

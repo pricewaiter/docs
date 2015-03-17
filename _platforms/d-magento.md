@@ -27,15 +27,15 @@ Magento store.
 8. In the left-hand navigation, under the __"SALES"__ heading, click __"PriceWaiter"__. 
 9. Enable the extension by changing __"Enabled"__ to "Yes", and copy and pasting your API Key into the __"API Key"__ box, then click __"Save Config"__.
 
+### Enabling Product Data Lookups for existing stores
+
+When upgrading to the Magento Extension 2.0 version, there is a new feature called Product Data Lookup. This allows PriceWaiter to pull verified product price and inventory data from you store and powers Automatic Response and other premium features. To enable this, you will need to set the `Endpoint URL` and `Secret Key` settings. You can find these in the `Product Data Lookup` section of your store's [Advanced Settings](https://manage.pricewaiter.com/store/advanced).
+
+Upgrading the Magento Extension should generate a `Secret Key` for you. The `Endpoint URL` will be `https://_YOUR_DOMAIN_NAME_/pricewaiter/productinfo`
+
 ### Configuring the Appearance of Magento Extension
 
-From PriceWaiter's configuration in Magento, you can configure the appearance of the button with these options:
-
-* Button Phrase
-* Display Size
-* Color
-* Hover Color
-* Custom CSS for containing `<div>`
+From appearance of the PriceWaiter button is now controlled with [settings in your account](https://manage.pricewaiter.com/store/button).
 
 ### Controlling the visibility of the PriceWaiter button
 
@@ -44,4 +44,7 @@ The PriceWaiter Magento extension allows you restrict the visibility of the butt
 * by Customer Group, in PriceWaiter's configuration in "System" -> "Configuration"
 * per Product by toggling the "Disable PriceWaiter Widget?" attribute on a product
 * per Category by toggling the "Enabled" option in the "PriceWaiter" tab on categories
+
+A separate toggle is available for conversion tools, such as Exit Offers.
+
 

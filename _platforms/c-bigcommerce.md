@@ -1,16 +1,16 @@
 ---
 layout: page
-title: "BigCommerce Integration Guide"
-nav_title: "BigCommerce <em>(Guide)</em>"
+title: "Bigcommerce Integration Guide"
+nav_title: "Bigcommerce <em>(Guide)</em>"
 ---
 
-PriceWaiter offical BigCommerce app is in the final development stages, but fear not, we have many retailers who have implemented already without the official app.
+PriceWaiter offical Bigcommerce app is in the final development stages, but fear not, we have many retailers who have implemented already without the official app.
 
 * * *
 
 ## Adding the Widget Code
 
-1. Login to your BigCommerce admin panel
+1. Login to your Bigcommerce admin panel
 2. At the top of the page, navigate to __"Design"__
 3. In the gray __"Current Theme"__ box under __"Store Design"__, click __"Edit HTML/CSS"__
 4. From the bottom, left hand frame select __"Panels" > "ProductDetails.html"__

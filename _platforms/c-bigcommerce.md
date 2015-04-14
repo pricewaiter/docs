@@ -77,3 +77,21 @@ var PriceWaiterOptions = {
 </script>
 
 {% endhighlight %}
+
+## Enable only for specific prices
+
+You may also limit the button to certain price ranges. Enter the following code __just before__ the main PriceWaiter script:
+
+{% highlight html %}
+<script type="text/javascript">
+var PWPrice = $('[itemprop=price]').html();
+if (PWPrice) {
+    PWPrice = PWPrice.replace(/[^0-9\.]+/g, '');
+}
+var PWEnabled = PWPrice && PWPrice > 200;
+var PriceWaiterOptions = {
+    enableButton: PWEnabled
+};
+</script>
+
+{% endhighlight %}

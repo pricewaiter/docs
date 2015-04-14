@@ -63,3 +63,17 @@ For each product that you don't want the PriceWaiter button to appear on, follow
 <!-- End Disable PriceWaiter Widget On This Page -->
 {% endhighlight %}
 
+## Enable only for specific brands
+
+Sometimes retailers only wish to enable product negotiation for specific brands. Enter the following code __just before__ the main PriceWaiter script:
+
+{% highlight html %}
+<script type="text/javascript">
+var PWBrandName = '%%GLOBAL_BrandName%%';
+PWBrandName = PWBrandName.toLowerCase();
+var PriceWaiterOptions = {
+    enableButton: PWBrandName == 'nikon' || PWBrandName == 'canon camera'
+};
+</script>
+
+{% endhighlight %}

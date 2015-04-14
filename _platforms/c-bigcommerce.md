@@ -4,11 +4,13 @@ title: "Bigcommerce App"
 nav_title: "Bigcommerce <em>(App)</em>"
 ---
 
-PriceWaiter has official support for Bigcommerce stores. Our app will connect your store to our platform, guide you through the template installation, and allow successful orders to be written back to your store. Adding our <em>Name Your Price</em> button to your store is easy!
+PriceWaiter has official support for Bigcommerce stores. Our app will connect your store to our platform, guide you through the template installation, and allow successful orders to be written back to your store. Adding our <em>Name Your Price</em> button to your Bigcommerce store is easy!
 
 <center>
     <a class="btn btn-primary btn-outline btn-lg" href="https://www.bigcommerce.com/apps/pricewaiter-name-your-price/" target="_blank">Visit Bigcommerce App Store</a>
 </center>
+
+Our Bigcommerce App can integrate with your product data to enable Premium PriceWaiter features: Inventory levels, automated responses based on retail price or product cost and your margins.
 
 * * *
 

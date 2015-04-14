@@ -6,8 +6,7 @@ nav_title: "Magento <em>(Extension)</em>"
 
 <img src="/images/magento-silver.png" class="right" width="150" height="150" />
 
-The official PriceWaiter Magento extension allows you to quickly enable, configure, and integrate PriceWaiter into your
-Magento store.
+The official PriceWaiter Magento extension allows you to quickly enable, configure, and integrate PriceWaiter into your Magento store.
 
 <center>
     <a class="btn btn-primary btn-outline btn-lg" href="http://www.magentocommerce.com/magento-connect/pricewaiterr-name-your-price-widget.html" target="_blank">Visit Magento Connect</a><br />
@@ -24,7 +23,7 @@ Magento store.
 5. Under the "Install New Extensions" heading, paste the key into the box and click __"Install"__, then click __"Proceed"__.
 6. Log out of the Magento Connect Manager and your Magento Admin panel.
 7. Log in to your Magento Admin Panel and navigate to __"System"__ -> __"Configuration"__.
-8. In the left-hand navigation, under the __"SALES"__ heading, click __"PriceWaiter"__. 
+8. In the left-hand navigation, under the __"SALES"__ heading, click __"PriceWaiter"__.
 9. Enable the extension by changing __"Enabled"__ to "Yes", and copy and pasting your API Key into the __"API Key"__ box, then click __"Save Config"__.
 
 ### Enabling Product Data Lookups for existing stores

@@ -47,3 +47,19 @@ Our app provides a control panel in your Shopify Admin. From here you can contro
 * Button Color, both hover and background
 * Button Phrase: "Name your Price" or "Make an Offer"
 * CSS Style for margin, padding and width of button
+
+## Full width button
+
+Some Shopify themes have a wider call-to-action button for Add To Cart. To make the PriceWaiter negotiaton button match that width, you can use the following CSS code:
+
+{% highlight html %}
+<style>
+.pricewaiter--wrap iframe {
+  width: 100% !important;
+}
+</style>
+
+<div class="pricewaiter--wrap">
+{% raw %}{% include 'pricewaiter' %}{% endraw %}
+</div>
+{% endhighlight %}

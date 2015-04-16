@@ -86,14 +86,18 @@ You may also limit the button to certain price ranges. Enter the following code 
 
 {% highlight html %}
 <script type="text/javascript">
-var PWPrice = $('[itemprop=price]').html();
-if (PWPrice) {
-    PWPrice = PWPrice.replace(/[^0-9\.]+/g, '');
-}
-var PWEnabled = PWPrice && PWPrice > 200;
 var PriceWaiterOptions = {
-    enableButton: PWEnabled
+    enableButton: false,
+    onLoad: function(PW, PlatformLoad) {
+        var PWPrice = false;
+        if (PW.platform.custom.parse_price) {
+            PWPrice = PW.platform.custom.parse_price();
+        }
+        if (PWPrice && PWPrice > 150 && !PriceWaiter.isButtonEnabled()) {
+            PriceWaiter.configure({enableButton: true});
+        }
+        PlatformLoad();
+    }
 };
 </script>
-
 {% endhighlight %}

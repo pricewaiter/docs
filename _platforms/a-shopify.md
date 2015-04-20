@@ -63,3 +63,15 @@ Some Shopify themes have a wider call-to-action button for Add To Cart. To make 
 {% raw %}{% include 'pricewaiter' %}{% endraw %}
 </div>
 {% endhighlight %}
+
+## Limit negotiation button to one Shopify collection
+
+You can use the Shopify interface to toggle the PriceWaiter button on a per-product or per-collection basis. You may also find a need for testing out our button on a single collection before rolling out site-wide.  Use the following example code in your `product.liquid` file. You can find the ID of your collection by editing the collection in Shopify, and copying the number out of your browsers url field. __Replace `1234` with your collection id.__
+
+{% highlight html %}
+{% raw %}
+{% if collection.id == 1234 %}
+    {% include 'pricewaiter' %}
+{% endif %}
+{% endraw %}
+{% endhighlight %}

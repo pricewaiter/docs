@@ -18,6 +18,14 @@
 
         false
 
+    # affiliate tracking cookie
+    affiliate_search = location.search.match /affiliate=(.*)/
+    if affiliate_search
+        $.cookie 'affiliate', affiliate_search[1],
+            domain: if document.location.hostname == 'localhost' then 'localhost' else 'pricewaiter.com'
+            path: '/'
+            expires: 60
+
     # if we see apikey query string, store in localStorage
     apikey_search = location.search.match /apikey=(.*)/
     if apikey_search

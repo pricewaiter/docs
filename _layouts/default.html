@@ -47,5 +47,6 @@
         {% include footer.html %}
     </body>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="/js/jquery.cookie.js?bust={{ site.time | date_to_xmlschema | cgi_escape }}"></script>
     <script src="/js/docs.js?bust={{ site.time | date_to_xmlschema | cgi_escape }}"></script>
 </html>

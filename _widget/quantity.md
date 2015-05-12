@@ -12,7 +12,7 @@ Set the default quantity value and/or disable the quantity field.
 
 {% highlight javascript %}
 var PriceWaiterOptions = {
-    // Not shown: apiKey and other required options
+    // Not shown: other required options
     quantity: 2,
     hideQuantityField: true
 }

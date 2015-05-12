@@ -11,7 +11,7 @@ Since PriceWaiter is loaded asynchronously, it might not be available right when
 
 {% highlight javascript %}
 var PriceWaiterOptions = {
-    // Not shown: apiKey and other required options
+    // Not shown: other required options
     onLoad: function(PriceWaiter, platformOnLoad) {
         // Your custom function(s) here
         $('select.size').change(function() {

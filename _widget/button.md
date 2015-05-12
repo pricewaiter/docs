@@ -16,7 +16,7 @@ These settings are also easily changed in your [PriceWaiter account](https://man
 
 {% highlight javascript %}
 var PriceWaiterOptions = {
-    // Not shown: apiKey and other required options
+    // Not shown: other required options
     button: {
         size: 'lg',
         color: '#666',

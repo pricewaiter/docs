@@ -11,7 +11,7 @@ Set the currency that will be used for the offer. The effect will be to show the
 
 {% highlight javascript %}
 var PriceWaiterOptions = {
-    // Not shown: apiKey and other required options
+    // Not shown: other required options
     currency: 'USD'
 }
 {% endhighlight %}

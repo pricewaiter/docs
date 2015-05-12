@@ -11,7 +11,7 @@ Metadata allows your store to pass arbitrary key/value data through the PriceWai
 
 {% highlight javascript %}
 var PriceWaiterOptions = {
-    // Not shown: apiKey and other required options
+    // Not shown: other required options
     metadata: {
         affilate_id: 'company_1234',
         referer: 'pinterest',

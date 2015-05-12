@@ -13,7 +13,7 @@ The following example is purely conceptual and should not be replicated literall
 
 {% highlight javascript %}
 var PriceWaiterOptions = {
-    // Not shown: apiKey and other required options
+    // Not shown: other required options
     onProductOptionsRequired: function(options) {
         alert("Please provide the following product option(s):" + options.join(','));
     }

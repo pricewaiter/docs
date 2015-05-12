@@ -15,7 +15,7 @@ Set information about the product the user is viewing. If your product has optio
 
 {% highlight javascript %}
 var PriceWaiterOptions = {
-    // Not shown: apiKey and other required options
+    // Not shown: other required options
     product: {
         sku: 'Product SKU',
         name: 'Product Name',

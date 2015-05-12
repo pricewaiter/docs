@@ -9,10 +9,10 @@ description: "Quick Start Guide"
 We have ready-to-go plugins for many popular e-commerce platforms. See our [integrations list](https://www.pricewaiter.com/integrations/) to see if your platform is supported.
 
 <center>
-    <a href="/platforms/c-bigcommerce.html" class="btn btn-primary btn-outline btn-lg">Bigcommerce App</a>
-    <a href="/platforms/d-magento.html" class="btn btn-primary btn-outline btn-lg">Magento Extension</a>
+    <a href="/platforms/bigcommerce.html" class="btn btn-primary btn-outline btn-lg">Bigcommerce App</a>
+    <a href="/platforms/magento.html" class="btn btn-primary btn-outline btn-lg">Magento Extension</a>
     <a href="/platforms/prestashop.html" class="btn btn-primary btn-outline btn-lg">Prestashop Module</a>
-    <a href="/platforms/a-shopify.html" class="btn btn-primary btn-outline btn-lg">Shopify App</a>
+    <a href="/platforms/shopify.html" class="btn btn-primary btn-outline btn-lg">Shopify App</a>
     <a href="/platforms/woocommerce.html" class="btn btn-primary btn-outline btn-lg">Woocommerce App</a>
 </center>
 

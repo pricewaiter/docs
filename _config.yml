@@ -10,8 +10,11 @@ footer: 'PriceWaiter'
 #   2 - show only if posts are present
 navigation: 1
 
+gems:
+  - jekyll-redirect-from
+
 # URL to source code, used in _includes/footer.html
-codeurl: 'https://www.pricewaiter.com'
+codeurl: 'https://docs.pricewaiter.com'
 
 # Default categories (in order) to appear in the navigation
 sections: [
@@ -35,8 +38,6 @@ baseurl: ''
 
 # Dates are not included in permalinks
 permalink: none
-
-safe: true
 
 # Since these are pages, it doesn't really matter
 future: true

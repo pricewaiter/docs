@@ -9,7 +9,7 @@ redirect_from:
 The official PriceWaiter app for Shopify will have you selling more in no time flat. The installation process is a breeze and can be done in less than 10 minutes.  A order will be created in your Shop after a successful deal is made and the buyer purchases on PriceWaiter.
 
 <center>
-    <a class="btn btn-primary btn-outline btn-lg" href="https://apps.shopify.com/pricewaiter-name-your-price" target="_blank">Visit Shopify App Store</a>
+    <a class="btn btn-primary btn-outline btn-lg" href="https://apps.shopify.com/pricewaiter-name-your-price" target="_blank">Find Pricewaiter in the Shopify App Store</a>
 </center>
 
 * * *

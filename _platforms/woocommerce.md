@@ -6,6 +6,12 @@ nav_title: "WooCommerce <em>(Plugin)</em>"
 
 The official PriceWaiter plugin for WooCommerce will have you selling more in no time flat. The installation process is a breeze and can be done in less than 10 minutes.
 
+<center>
+    <a class="btn btn-primary btn-outline btn-lg" href="https://wordpress.org/plugins/woocommerce-pricewaiter/" target="_blank">Find Pricewaiter in the Wordpress Plugin Directory</a>
+</center>
+
+
+
 * * *
 
 ## Getting Started
@@ -30,7 +36,7 @@ __If you ALREADY have a PriceWaiter account__, skip to [configuration with exist
 ## Configuration with an Existing PriceWaiter Account
 
 1. Contact a PriceWaiter sales rep and ask them to set your store platform to __WooCommerce__
-2. Enable WooCommerce's REST API 
+2. Enable WooCommerce's REST API
     * Go to Wordpress Admin > WooCommerce > Settings > General
     * Check the "Enable REST API" box
     * Click "Save"

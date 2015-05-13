@@ -6,6 +6,10 @@ nav_title: "PrestaShop <em>(Module)</em>"
 
 The official PriceWaiter module for PrestaShop will have you selling more in no time flat. The installation process is designed to get you up and running as quickly and easily as possible.
 
+<center>
+    <a class="btn btn-primary btn-outline btn-lg" href="http://addons.prestashop.com/en/pricing-promotion-prestashop-modules/19590-pricewaiter.html" target="_blank">Find Pricewaiter in the Prestashop Addons Marketplace</a>
+</center>
+
 * * *
 
 ## Getting Started
@@ -48,7 +52,7 @@ We recommend placing the PriceWaiter button as close as possible to the Add to C
 
 ## Make PriceWaiter work for you!
 
-Once you've copied your API key back to your PrestaShop account, you'll see a new link on the PriceWaiter module configuration page. 
+Once you've copied your API key back to your PrestaShop account, you'll see a new link on the PriceWaiter module configuration page.
 
 <img src="/images/prestashop/presta-pw-config-button.png" />
 

@@ -11,7 +11,7 @@ redirect_from:
 The official PriceWaiter Magento extension allows you to quickly enable, configure, and integrate PriceWaiter into your Magento store.
 
 <center>
-    <a class="btn btn-primary btn-outline btn-lg" href="http://www.magentocommerce.com/magento-connect/pricewaiterr-name-your-price-widget.html" target="_blank">Visit Magento Connect</a><br />
+    <a class="btn btn-primary btn-outline btn-lg" href="http://www.magentocommerce.com/magento-connect/pricewaiterr-name-your-price-widget.html" target="_blank">Find Pricewaiter in Magento Connect</a><br />
 </center>
 
 * * *

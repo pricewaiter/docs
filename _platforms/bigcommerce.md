@@ -3,7 +3,7 @@ layout: page
 title: "Bigcommerce App"
 nav_title: "Bigcommerce <em>(App)</em>"
 redirect_from:
-    - /platforms/d-bigcommerce.html
+    - /platforms/c-bigcommerce.html
 ---
 
 PriceWaiter has official support for Bigcommerce stores. Our app will connect your store to our platform, guide you through the template installation, and allow successful orders to be written back to your store. Adding our <em>Name Your Price</em> button to your Bigcommerce store is easy!

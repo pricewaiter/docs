@@ -3,3 +3,17 @@
         margin-top: (gutter() * 2.5);
     }
 }
+
+.featured-platforms {
+    text-align: center;
+}
+
+@media (max-width: $screen-md) {
+    .featured-platforms a {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .featured-platforms .btn+.btn {
+        margin-left: 0;
+    }
+}

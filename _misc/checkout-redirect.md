@@ -5,7 +5,7 @@ title: Checkout Redirect
 
 PriceWaiter can redirect buyers to a custom page on your website after a successful order purchase. You may use this page to trigger Javascript conversion tracking events. Under *Advanced Settings* in your PriceWaiter account, you can set the Checkout Redirect url and HTTP POST/GET method. We recommend POST unless you have specific technical need for the GET HTTP method.
 
-We _do not_ recommend using checkout redirect to process order details into a fulfilment system. Our supported platforms do that automatically, and custom integrations can use the [Order Callback API](/misc/order-callback.html) securely process orders.
+We _do not_ recommend using checkout redirect to process order details into a fulfilment system. Our supported platforms do that automatically, and custom integrations can use the [Order Callback API](/misc/order-callback.html) to securely process orders.
 
 ## Google Analytics Ecommerce tracking
 

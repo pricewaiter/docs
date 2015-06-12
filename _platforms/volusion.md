@@ -26,3 +26,18 @@ redirect_from:
 * Be sure to change <code>&lt;your api key here&gt;</code> to your PriceWaiter API Key, which you can see in your [account settings](https://manage.pricewaiter.com/stores/current/settings).
 
 * Once you have saved and published the code, [contact our support team](https://www.pricewaiter.com/contact/) to turn on the volusion plugin. This final step will allow our button to appear on your store's website.
+
+
+
+## Disable PriceWaiter on specific products
+
+For each product that you don't want the PriceWaiter button to appear on, follow these steps:
+
+Upload a product description that contains these html tags to toggle the button off.
+
+#### No PriceWaiter button
+{% highlight html %}
+<!-- Begin Disable PriceWaiter Widget On This Page -->
+<span id="no_pricewaiter_button" style="display: none;">&nbsp;</span>
+<!-- End Disable PriceWaiter Widget On This Page -->
+{% endhighlight %}

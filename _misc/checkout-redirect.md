@@ -29,9 +29,9 @@ _gaq.push(['_addTrans',
     '<?php echo json_encode($_POST['total']); ?>',
     '<?php echo json_encode($_POST['tax']); ?>',
     '<?php echo json_encode($_POST['shipping']); ?>',
-    '<?php echo json_encode($_POST['shipping_city']); ?>',
-    '<?php echo json_encode($_POST['shipping_state']); ?>',
-    '<?php echo json_encode($_POST['shipping_country']); ?>'
+    '<?php echo json_encode($_POST['buyer_shipping_city']); ?>',
+    '<?php echo json_encode($_POST['buyer_shipping_state']); ?>',
+    '<?php echo json_encode($_POST['buyer_shipping_country']); ?>'
 ]);
 
 _gaq.push(['_trackTrans']);

@@ -44,6 +44,7 @@ __If you ALREADY have a PriceWaiter account__, skip to [configuration with exist
     * Either create a new WP Administrator or edit an existing administrator
     * Enable the REST API with `read/write` mode for that user
     * You will need to copy the `Consumer Key` and `Consumer Secret`
+    * The `Woo REST API URL` looks like: `https://YOURDOMAIN.COM/wc-api/v2/`
     * Login to your PriceWaiter account, go to Store > Advanced > WooCommerce and save the api keys
 4. Complete the setup for items under "Settings Reference" (below)
 

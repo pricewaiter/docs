@@ -12,6 +12,7 @@ navigation: 1
 
 gems:
   - jekyll-redirect-from
+  - jekyll-coffeescript
 
 # URL to source code, used in _includes/footer.html
 codeurl: 'https://docs.pricewaiter.com'

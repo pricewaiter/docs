@@ -19,7 +19,6 @@
                 {% if page.collection == 'platforms' and nav_item.category == 'platforms' %}
                     {% assign showSubnav = true %}
                 {% endif %}
-                
                 {% if showSubnav %}
                 <ul>
                 {% for item in site[attr] %}
@@ -30,7 +29,9 @@
                     {% endif %}
 
                     {% if attr == 'platforms' or attr == 'misc' %}
+                        {% unless item.nav_hidden %}
                     <li><a href="{{ site.baseurl }}{{ item.url }}">{{ title }}</a></li>
+                        {% endunless %}
                     {% else %}
                     <li><a href="{{ site.baseurl }}{{ nav_item.url }}#{{ item.relative_path }}">{{ title }}</a></li>
                     {% endif %}

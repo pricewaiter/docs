@@ -6,7 +6,7 @@ title: "Order Callback"
 The Order Callback allows PriceWaiter to insert orders into your Ecommerce Platform.
 Our system will make a API call to your server with the details of a successful payment for an offer.
 
-*This feature is not needed for Magento or Shopify as they directly integrate order creation in your store.*
+*This feature is not needed for Shopify or Bigcommerce as they directly integrate order creation in your store.*
 
 Order Notification API URL / Endpoint
 -------------------------------------

@@ -11,10 +11,11 @@ Our system will make a API call to your server with the details of a successful 
 Order Notification API URL / Endpoint
 -------------------------------------
 
-* [Sign in](https://manage.pricewaiter.com/) to your PriceWaiter dashboard
-* Navigate to Stores -> Advanced
-* Edit the configuration options for "Order Notification API"
-* Enter the URL that will receive new order notifications
+* [Sign in](https://retailer.pricewaiter.com/) to your PriceWaiter dashboard
+* Navigate to Settings -> Platform Integration
+* Enter the URL that will receive new order notifications in the `Order Notification Callback URL` field.
+
+(For magento extension users, the Order Notification URL format is `https://_YOUR_DOMAIN_NAME_/index.php/pricewaiter/callback`)
 
 Verify API Call
 ---------------

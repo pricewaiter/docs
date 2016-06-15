@@ -13,7 +13,7 @@
         {% include google_analytics.html %}
     </head>
     <body>
-        
+
         <header class="site-header">
             <div class="header-top">
                 {% include header.html %}
@@ -47,6 +47,8 @@
         {% include footer.html %}
     </body>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/styles/github.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
     <script src="/js/jquery.cookie.js?bust={{ site.time | date_to_xmlschema | cgi_escape }}"></script>
     <script src="/js/docs.js?bust={{ site.time | date_to_xmlschema | cgi_escape }}"></script>
 </html>

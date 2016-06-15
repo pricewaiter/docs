@@ -2,7 +2,7 @@
 ---
 (($) ->
 
-    
+
 
     # Tables get borked on mobile, put them in a wrapper
     $('table').wrap('<div class="table-wrap"></div>')
@@ -46,10 +46,10 @@
         headerHeight = $('.site-header').height()
 
         if ($('#hidden-mobile').is(':hidden'))
-            headerHeight = 0 
+            headerHeight = 0
 
         hashEl = $('a[name="' + hash[1] + '"]')
-        if !hashEl.length 
+        if !hashEl.length
             hashEl = $('#' + hash[1])
 
         if !hashEl.length
@@ -68,6 +68,8 @@
     $(document).ready ->
         if window.location.hash
             scrollToHash(window.location.hash)
+
+        hljs.initHighlightingOnLoad()
 
     return
 

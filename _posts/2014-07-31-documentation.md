@@ -10,6 +10,6 @@ date: 2014-07-31 15:56:31
   <article class="doc-item">
     <a name="{{ item.relative_path }}"></a>
     <h3>{{ item.title }}</h3>
-    {{ item.output }}
+    {{ item.content | markdownify }}
   </article>
 {% endfor %}

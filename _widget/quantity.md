@@ -9,9 +9,9 @@ Set the default quantity value.
 | --------           | -------------                        | --------    | --------------- |
 | quantity (integer) | Default value of the quantity field. | any integer | 1               |
 
-{% highlight javascript %}
+<pre><code class="javascript">
 var PriceWaiterOptions = {
     // Not shown: other required options
     quantity: 2
 }
-{% endhighlight %}
+</code></pre>

@@ -9,9 +9,9 @@ Set the currency that will be used for the offer. The effect will be to show the
 | --------          | -------------                      | --------                         | --------------- |
 | currency (string) | Currency to be used for the offer. | Any valid ISO-4217 currency code | USD             |
 
-{% highlight javascript %}
+<pre><code class="javascript">
 var PriceWaiterOptions = {
     // Not shown: other required options
     currency: 'USD'
 }
-{% endhighlight %}
+</code></pre>

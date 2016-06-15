@@ -9,7 +9,7 @@ Since PriceWaiter is loaded asynchronously, it might not be available right when
 | --------          | -------------                                                                               | -------- | --------------- |
 | onLoad (function) | A custom function to execute after the PriceWaiter Javascript API and button are available. | n/a      | none            |
 
-{% highlight javascript %}
+<pre><code class="javascript">
 var PriceWaiterOptions = {
     // Not shown: other required options
     onLoad: function(PriceWaiter, platformOnLoad) {
@@ -23,4 +23,4 @@ var PriceWaiterOptions = {
         return platformOnLoad();
     }
 }
-{% endhighlight %}
+</code></pre>

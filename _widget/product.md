@@ -15,7 +15,7 @@ Set information about the product the user is viewing. If your product has optio
 | regular_price (decimal) | The list price if the item is currently on sale.                                                                                                                                       | n/a      | none            |
 | image (string)          | The full URL (including http://) to an image for the product. Images will be scaled down to fit within an box approximately 200x200 pixels. Accepts .jpg, .png, or .gif image formats. | n/a      | none            |
 
-{% highlight javascript %}
+<pre><code class="javascript">
 var PriceWaiterOptions = {
     // Not shown: other required options
     product: {
@@ -27,4 +27,4 @@ var PriceWaiterOptions = {
         image: 'http://yourdomain.com/images/path/filename.jpg'
     }
 };
-{% endhighlight %}
+</code></pre>

@@ -11,11 +11,11 @@ If you have used setProductOptionRequired to mark a product option as required, 
 
 The following example is purely conceptual and should not be replicated literally. Example uses a jQuery selector to call the API Method setProductOption when the user changes the size of the product.
 
-{% highlight javascript %}
+<pre><code class="javascript">
 var PriceWaiterOptions = {
     // Not shown: other required options
     onProductOptionsRequired: function(options) {
         alert("Please provide the following product option(s):" + options.join(','));
     }
 }
-{% endhighlight %}
+</code></pre>

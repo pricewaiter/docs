@@ -11,7 +11,6 @@ Use our Javascript API to send information about your products to PriceWaiter. W
   <article class="doc-item">
     <a name="{{ item.relative_path }}"></a>
     <h3>{{ item.title }}</h3>
-    {{ item.output }}
+    {{ item.content | markdownify }}
   </article>
 {% endfor %}
-

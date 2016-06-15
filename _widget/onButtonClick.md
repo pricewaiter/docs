@@ -4,7 +4,7 @@ title: "onButtonClick()"
 
 Add a hook in here to do custom validation before showing the PriceWaiter UI to your customers. To prevent the PriceWaiter UI from being shown, return false from your custom `onButtonClick` handler.
 
-{% highlight javascript %}
+<pre><code class="javascript">
 var PriceWaiterOptions = {
     // Not shown: other required options
     onButtonClick: function(PriceWaiter, platformOnButtonClick) {
@@ -18,4 +18,4 @@ var PriceWaiterOptions = {
         return platformOnButtonClick();
     }
 }
-{% endhighlight %}
+</code></pre>

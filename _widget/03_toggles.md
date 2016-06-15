@@ -13,9 +13,9 @@ The button may be toggled independently of our conversion tools, such as Exit In
 | enableConversionTools (bool) | Allow Exit Intent Offers and other tools |  n/a      |  true    |
 |-----------------+------------+-----------------+----------------|
 
-{% highlight javascript %}
+<pre><code class="javascript">
 var PriceWaiterOptions = {
     enableButton: false, // hide button by default
     enableConversionTools: true // allow Exit Intent Offers and other conversion tools
 }
-{% endhighlight %}
+</code></pre>

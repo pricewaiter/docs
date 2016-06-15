@@ -9,7 +9,7 @@ Metadata allows your store to pass arbitrary key/value data through the PriceWai
 | --------          | -------------                            | -------- | --------------- |
 | metadata (object) | Any arbitrary key/value data may be set. | n/a      | none            |
 
-{% highlight javascript %}
+<pre><code class="javascript">
 var PriceWaiterOptions = {
     // Not shown: other required options
     metadata: {
@@ -18,4 +18,4 @@ var PriceWaiterOptions = {
         custom_val: 'G'
     }
 }
-{% endhighlight %}
+</code></pre>

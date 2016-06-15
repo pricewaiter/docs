@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'github-pages', group: :jekyll_plugins
+gem 'jekyll', '3.1.3'
 gem 'jekyll-coffeescript'
 gem 'jekyll-redirect-from'

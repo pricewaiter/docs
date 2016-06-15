@@ -11,7 +11,7 @@ redirect_from:
 The official PriceWaiter Magento extension allows you to quickly enable, configure, and integrate PriceWaiter into your Magento store.
 
 <center>
-    <a class="btn btn-primary btn-outline btn-lg" href="http://www.magentocommerce.com/magento-connect/pricewaiterr-name-your-price-widget.html" target="_blank">Find Pricewaiter in Magento Connect</a><br />
+    <a class="btn btn-primary btn-outline btn-lg" href="https://www.magentocommerce.com/magento-connect/pricewaiter-for-magento.html" target="_blank">Find Pricewaiter in Magento Connect</a><br />
 </center>
 
 * * *
@@ -30,22 +30,10 @@ The official PriceWaiter Magento extension allows you to quickly enable, configu
 
 ### Enabling Product Data Lookups for existing stores
 
-When upgrading to the Magento Extension 2.0 version, there is a new feature called Product Data Lookup. This allows PriceWaiter to pull verified product price and inventory data from you store and powers Automatic Response and other premium features. To enable this, you will need to set the `Endpoint URL` and `Secret Key` settings. You can find these in the `Product Data Lookup` section of your store's [Advanced Settings](https://manage.pricewaiter.com/store/advanced).
+When upgrading to the Magento Extension 2.0 version, there is a new feature called Product Data Lookup. This allows PriceWaiter to pull verified product price and inventory data from you store and powers Automatic Response and other premium features. To enable this, you will need to set the `Endpoint URL` and `Secret Key` settings. You can find these in the `Product Data API` section of your store's [Settings > Platform Integration](https://retailer.pricewaiter.com/).
 
 Upgrading the Magento Extension should generate a `Secret Key` for you. The `Endpoint URL` will be `https://_YOUR_DOMAIN_NAME_/pricewaiter/productinfo`
 
-### Configuring the Appearance of Magento Extension
+### Segmenting traffic and appearance
 
-From appearance of the PriceWaiter button is now controlled with [settings in your account](https://manage.pricewaiter.com/store/button).
-
-### Controlling the visibility of the PriceWaiter button
-
-The PriceWaiter Magento extension allows you restrict the visibility of the button:
-
-* by Customer Group, in PriceWaiter's configuration in "System" -> "Configuration"
-* per Product by toggling the "Disable PriceWaiter Widget?" attribute on a product
-* per Category by toggling the "Enabled" option in the "PriceWaiter" tab on categories
-
-A separate toggle is available for conversion tools, such as Exit Offers.
-
-
+PriceWaiter Campaigns allow you to control the look and feel of our call-to-action on your product pages. You can change the button appearance and decide when each campaign type is eligible for display. See the PriceWaiter Campaign section of [your store dashboard](https://retailer.pricewaiter.com/) to get started.

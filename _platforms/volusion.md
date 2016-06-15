@@ -23,7 +23,7 @@ redirect_from:
 <!-- End PriceWaiter code -->
 {% endhighlight %}
 
-* Be sure to change <code>&lt;your api key here&gt;</code> to your PriceWaiter API Key, which you can see in your [account settings](https://manage.pricewaiter.com/stores/current/settings).
+* Be sure to change <code>&lt;your api key here&gt;</code> to your PriceWaiter API Key, which you can see in [Settings > Platform Integration](https://retailer.pricewaiter.com/).
 
 * Once you have saved and published the code, [contact our support team](https://www.pricewaiter.com/contact/) to turn on the volusion plugin. This final step will allow our button to appear on your store's website.
 

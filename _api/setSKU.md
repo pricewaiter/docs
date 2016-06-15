@@ -7,6 +7,6 @@ Sets/Gets the SKU or Manufacturer's Part Number for the current product. Equival
 
 __Tip:__ The SKU will be POSTed back to your Order Notification Callback URL as the primary product identifier.
 
-{% highlight javascript %}
+<pre><code class="javascript">
 PriceWaiter.setSKU('THESKU-123-AB');
-{% endhighlight%}
+</code></pre>

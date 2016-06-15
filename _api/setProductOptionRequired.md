@@ -17,7 +17,7 @@ __NOTE:__ A product option will fail the "requirement" test if:
 	* ' ' (empty string with whitespace)
 
 
-{% highlight javascript %}
+<pre><code class="javascript">
 // Example setting a single option as required
 PriceWaiter.setProductOptionRequired('color');
 
@@ -27,13 +27,13 @@ PriceWaiter.setProductOptionRequired([
     'size',
     'fragrance'
 ]);
-{% endhighlight%}
+</code></pre>
 
 #### Unsetting Required Options
 
 To mark options as no longer required, you can use [__clearProductOption__](#_api/clearProductOption.md), [__clearProductOptions__](#_api/clearProductOptions.md) or pass `false` as the __required__ argument _(see example)__
 
-{% highlight javascript %}
+<pre><code class="javascript">
 // Example make 'color' not required
 PriceWaiter.setProductOptionRequired('color', false);
 
@@ -43,4 +43,4 @@ PriceWaiter.setProductOptionRequired([
     'size',
     'fragrance'
 ], false);
-{% endhighlight%}
+</code></pre>

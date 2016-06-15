@@ -7,7 +7,7 @@ Sets/gets the default quantity. Equivalent to [__quantity__](/widget/documentati
 
 __Tip:__ This method should be used whenever a user changes the quantity if you display a quantity option on your product detail page(s).
 
-{% highlight javascript %}
+<pre><code class="javascript">
 // Set currency to US Dollar
 PriceWaiter.setQuantity(1);
-{% endhighlight%}
+</code></pre>

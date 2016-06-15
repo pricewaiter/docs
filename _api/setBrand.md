@@ -5,7 +5,7 @@ nav_title: "setBrand()"
 
 Sets/gets the current product's brand name.
 
-{% highlight javascript %}
+<pre><code class="javascript">
 // Set the logged in users email
 PriceWaiter.setBrand('Nike');
-{% endhighlight%}
+</code></pre>

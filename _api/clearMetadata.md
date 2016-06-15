@@ -5,10 +5,10 @@ nav_title: "clearMetadata()"
 
 Unsets a metadata option set using [__setMetadata__](#_api/setMetadata.md) or [__setMetadataValues__](#_api/setMetadataValues.md)
 
-{% highlight javascript %}
+<pre><code class="javascript">
 // Example setting metadata
 PriceWaiter.setMetadata('referer', 'pinterest',);
 
 // Unsets a metadata key
 PriceWaiter.clearMetadata('referer');
-{% endhighlight%}
+</code></pre>

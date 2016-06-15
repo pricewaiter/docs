@@ -7,10 +7,10 @@ The current price for the product (as configured on the page). See [__setRegular
 
 __Tip:__ This is price users will be comparing their offer to. Can be the sale price, otherwise use the product price.
 
-{% highlight javascript %}
+<pre><code class="javascript">
 // Example as a decimal
 PriceWaiter.setPrice(99.99);
 
 // Example as a formatted string
 PriceWaiter.setPrice('$1,999.99');
-{% endhighlight%}
+</code></pre>

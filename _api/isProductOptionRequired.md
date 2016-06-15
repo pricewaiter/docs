@@ -5,7 +5,7 @@ nav_title: "isProductOptionRequired()"
 
 Returns `true` or `false` on whether the given option has been marked as required using [__setProductOptionRequired__](#_api/setProductOptionRequired.md).
 
-{% highlight javascript %}
+<pre><code class="javascript">
 // Check if 'color' is a required option
 PriceWaiter.isProductOptionRequired('color');
-{% endhighlight%}
+</code></pre>

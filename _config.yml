@@ -9,7 +9,7 @@ footer: 'PriceWaiter'
 #   1 - always show
 #   2 - show only if posts are present
 navigation: 1
-
+safe: true
 gems:
   - jekyll-redirect-from
   - jekyll-coffeescript

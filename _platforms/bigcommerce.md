@@ -36,3 +36,23 @@ Our Bigcommerce App can integrate with your product data to enable Premium Price
 <ol start="6">
     <li>Click <strong>"Save"</strong></li>
 </ol>
+
+
+## Full width button
+
+To make the PriceWaiter negotiation button match full-width add to cart buttons, you can use the following CSS code:
+
+{% highlight html %}
+<!-- Begin PriceWaiter Widget Button -->
+<style>
+.pricewaiter--wrap iframe {
+  width: 100% !important;
+}
+</style>
+
+<div class="pricewaiter--wrap">
+    <span id="pricewaiter"></span>
+</div>
+<script src="https://widget.pricewaiter.com/script/<your api key here>.js" async></script>
+<!-- End PriceWaiter Widget Button -->
+{% endhighlight %}

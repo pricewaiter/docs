@@ -52,7 +52,7 @@ Our app provides a control panel in your Shopify Admin. From here you can contro
 
 ## Full width button
 
-Some Shopify themes have a wider call-to-action button for Add To Cart. To make the PriceWaiter negotiaton button match that width, you can use the following CSS code:
+Some Shopify themes have a wider call-to-action button for Add To Cart. To make the PriceWaiter negotiation button match that width, you can use the following CSS code:
 
 {% highlight html %}
 <style>

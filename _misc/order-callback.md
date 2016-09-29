@@ -31,11 +31,11 @@ Data Fields
 | Field                       | Example                       | Notes                                                |
 |:----------------------------|:------------------------------|:-----------------------------------------------------|
 | pricewaiter_id              | 10233323                      | (string) PriceWaiter ID for the order                |
-| order_completed_timestamp   | 2015-01-03T14:19:37-07:00     | (string) ISO 8601-formatted date/time                |
+| order_completed_timestamp   | {{ site.time | date_to_xmlschema }} | (string) ISO 8601-formatted date/time                |
 | store_id                    | 42                            | (string) PriceWaiter ID for the store                |
 | store_name                  | Kwik-E-Mart                   | (string) Name of the store as entered                |
 | api_key                     | 3kjsdf023lskjdf902lksjdf934   | (string) API Key assigned to the site                |
-| transaction_id              |                               | (string) Payment confirmation code                   |
+| transaction_id              | pk_a58conk8on4t3do9e98th3     | (string) Payment confirmation code                   |
 | payment_method              | authorize_net                 | (string) Name of payment processor                   |
 | buyer_first_name            | Ned                           | (string)                                             |
 | buyer_last_name             | Flanders                      | (string)                                             |

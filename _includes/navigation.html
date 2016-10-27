@@ -1,12 +1,12 @@
 <ul class="nav nav-list">
-    <li><a href="{{ site.baseurl }}/">Quick Start Guide</a></li>
+    <li><a href="/">Quick Start Guide</a></li>
     {% for section in site.sections %}
         {% assign attr = section[0] %}
         {% assign label = section[1] %}
 
         {% for nav_item in site.categories[attr] %}
             {% assign showSubnav = false %}
-            <li data-order="{{ nav_item.order }}"><a href="{{ site.baseurl }}{{ nav_item.url }}">{{ nav_item.title }}</a>
+            <li data-order="{{ nav_item.order }}"><a href="{{ nav_item.url }}">{{ nav_item.title }}</a>
 
                 {% if nav_item.url == page.url %}
                     {% assign showSubnav = true %}
@@ -30,10 +30,10 @@
 
                     {% if attr == 'platforms' or attr == 'misc' %}
                         {% unless item.nav_hidden %}
-                    <li><a href="{{ site.baseurl }}{{ item.url }}">{{ title }}</a></li>
+                    <li><a href="{{ item.url }}">{{ title }}</a></li>
                         {% endunless %}
                     {% else %}
-                    <li><a href="{{ site.baseurl }}{{ nav_item.url }}#{{ item.relative_path }}">{{ title }}</a></li>
+                    <li><a href="{{ nav_item.url }}#{{ item.relative_path }}">{{ title }}</a></li>
                     {% endif %}
 
                 {% endfor %}

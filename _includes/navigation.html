@@ -19,6 +19,11 @@
                 {% if page.collection == 'platforms' and nav_item.category == 'platforms' %}
                     {% assign showSubnav = true %}
                 {% endif %}
+
+                {% if page.collection == 'conversion' and nav_item.category == 'conversion' %}
+                    {% assign showSubnav = true %}
+                {% endif %}
+
                 {% if showSubnav %}
                 <ul>
                 {% for item in site[attr] %}
@@ -28,7 +33,7 @@
                         {% assign title = item.nav_title %}
                     {% endif %}
 
-                    {% if attr == 'platforms' or attr == 'misc' %}
+                    {% if attr == 'platforms' or attr == 'misc' or attr == 'conversion' %}
                         {% unless item.nav_hidden %}
                     <li><a href="{{ item.url }}">{{ title }}</a></li>
                         {% endunless %}

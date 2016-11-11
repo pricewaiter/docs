@@ -22,7 +22,8 @@ sections: [
     ['widget', 'Documentation'],
     ['api', 'Reference'],
     ['platforms', 'Platforms'],
-    ['misc', 'Extra Functionality']
+    ['conversion', 'Conversion Tracking'],
+    ['misc', 'Extra Functionality'],
 ]
 
 collections:
@@ -31,6 +32,8 @@ collections:
   platforms:
     output: true
   misc:
+    output: true
+  conversion:
     output: true
 
 # Keep as an empty string if served up at the root. If served up at a specific

@@ -10,6 +10,7 @@ Set information about the product the user is viewing. If your product has optio
 | sku (string)            | The SKU or Manufacturer's Part Number (MPN) for the product.                                                                                                                           | n/a      | none            |
 | name (string)           | The product's name, e.g. Apple iPhone 64GB                                                                                                                                             | n/a      | none            |
 | brand (string)          | The brand name for the product.                                                                                                                                                        | n/a      | none            |
+| categories (string)     | Array of product categories.                                                                                                                                                           |          |                 |
 | description (string)    | A brief description of the product.                                                                                                                                                    | n/a      | none            |
 | price (decimal)         | Your price for the product. The current add to cart or sale price should be used.                                                                                                      | n/a      | none            |
 | regular_price (decimal) | The list price if the item is currently on sale.                                                                                                                                       | n/a      | none            |
@@ -22,6 +23,10 @@ var PriceWaiterOptions = {
         sku: 'Product SKU',
         name: 'Product Name',
         brand: 'Sony',
+        categories: [
+            "Electronics",
+            ["Electronics", "Cell Phones"]
+        ],
         price: 99.99,
         regular_price: 120.00,
         image: 'http://yourdomain.com/images/path/filename.jpg'

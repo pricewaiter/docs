@@ -21,3 +21,25 @@ See the [Facebook Pixel Implementation Guide](https://www.facebook.com/business/
 ## Custom Conversion Scripts
 
 You can paste any html script tags in this area. PriceWaiter will execute your custom script once at the time of purchase. Please include the `<script>` html tags around your custom conversion codes.
+
+You can inject **dynamic variables** into your scripts by referencing the following keys on a global `window.Conversion` object.
+
+```
+window.Conversion = {
+    id: 'PW-123456',
+    store: {
+        name: 'Example Retailer Store'
+    },
+    product: {
+        name: 'iPhone 7',
+        sku: 'APPL-IPHO-123',
+        unit_price: 699.99,
+        quantity: 2
+    },
+    total: 1414.98,
+    shipping: 10.00,
+    tax: 5.00,
+    currency: 'USD'
+};
+
+```

@@ -16,7 +16,6 @@ Note that a product being a member of a hierarchical category does not mean it i
 Categories can also be set via the [__product.categories__](/widget/documentation.html#_widget/product.md) configuration key.
 
 <pre><code class="javascript">
-
 // Product is in "Clothing > Shirts and Jackets" and "Fire Sale"
 PriceWaiter.setCategories([
     ["Clothing", "Shirts and Jackets"],
@@ -28,5 +27,4 @@ PriceWaiter.setCategories([
     "Electronics",
     ["Electronics", "Cell Phones"]
 ]);
-
 </code></pre>

@@ -11,14 +11,16 @@ redirect_from:
 The official PriceWaiter Magento extension allows you to quickly enable, configure, and integrate PriceWaiter into your Magento store.
 
 <center>
-    <a class="btn btn-primary btn-outline btn-lg" href="https://www.magentocommerce.com/magento-connect/pricewaiter-for-magento.html" target="_blank">Find Pricewaiter in Magento Connect</a><br />
+    <a class="btn btn-primary btn-outline btn-lg" href="https://marketplace.magento.com/pricewaiter-nypwidget.html" target="_blank">Find Pricewaiter in Magento Marketplace</a><br />
 </center>
 
 * * *
 
-### Installing the Magento Extension
+### Installing the PriceWaiter Magento Extension
 
-1. Copy the installation key from Magento Connect.
+1. Purchase our free [Make an Offer extension](https://marketplace.magento.com/pricewaiter-nypwidget.html) in the Marketplace
+1. [Find your extension key](https://marketplace.magento.com/customer/accessKeys/list/) for the latest version of the `pricewaiter/nypwidget` extention.
+
 2. Log in to your Magento Admin panel.
 3. Navigate to __"System"__ -> __"Magento Connect"__ -> __"Magento Connect Manager"__.
 4. Login to the Magento Connect Manager.
@@ -27,6 +29,8 @@ The official PriceWaiter Magento extension allows you to quickly enable, configu
 7. Log in to your Magento Admin Panel and navigate to __"System"__ -> __"Configuration"__.
 8. In the left-hand navigation, under the __"SALES"__ heading, click __"PriceWaiter"__.
 9. Enable the extension by changing __"Enabled"__ to "Yes", and copy and pasting your API Key into the __"API Key"__ box, then click __"Save Config"__.
+
+If you prefer to download a tar file of our extension directly, visit our [github releases page](https://github.com/pricewaiter/magento/releases)
 
 ### Enabling Product Data Lookups for existing stores
 

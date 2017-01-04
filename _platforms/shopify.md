@@ -16,7 +16,7 @@ The official PriceWaiter app for Shopify will have you selling more in no time f
 
 ## Using the Shopify App
 
-The PriceWaiter Shopify app installs `snippets/pricewaiter.liquid` in your theme which contains all the code to handle your variants, product images, prices, etc. You can control the location of our button by moving the following code to different locations in your `templates/product.liquid` file. We recommend putting this code directly above or below the `<form>` tag that holds your Add To Cart button.
+The PriceWaiter Shopify app installs `snippets/pricewaiter.liquid` in your theme which contains all the code to handle your variants, product images, prices, etc. You can control the location of our button by moving the following code to different locations in your Product Template file. You can usually find this as `templates/product.liquid` or `sections/product-template.liquid` or `snippets/product.liquid`. We recommend putting this code directly above or below the `<form>` tag that holds your Add To Cart button.
 
 {% highlight html %}
 {% raw %}
@@ -43,12 +43,11 @@ You can also disable the button per-product or per-collection by using our menu,
 
 ## Configuring the button
 
-Our app provides a control panel in your Shopify Admin. From here you can control:
+Our app allows you to create different campaigns to compare different negotiation button call-to-actions. In each campaign, you can control:
 
 * Button Size
 * Button Color, both hover and background
-* Button Phrase: "Name your Price" or "Make an Offer"
-* CSS Style for margin, padding and width of button
+* Button Phrase: "Name your Price", "Make an Offer", "Price Match" and many more.
 
 ## Full width button
 

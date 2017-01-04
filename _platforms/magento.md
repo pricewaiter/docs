@@ -6,8 +6,6 @@ redirect_from:
     - /platforms/d-magento.html
 ---
 
-<img src="/images/magento-silver.png" class="right" width="150" height="150" />
-
 The official PriceWaiter Magento extension allows you to quickly enable, configure, and integrate PriceWaiter into your Magento store.
 
 <center>

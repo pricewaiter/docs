@@ -12,11 +12,32 @@ PriceWaiter has official support for Bigcommerce stores. Our app will connect yo
     <a class="btn btn-primary btn-outline btn-lg" href="https://www.bigcommerce.com/apps/name-your-price-pricewaiter/" target="_blank">Find Pricewaiter in the Bigcommerce App Store</a>
 </center>
 
-Our Bigcommerce App can integrate with your product data to enable Premium PriceWaiter features: Inventory levels, automated responses based on retail price or product cost and your margins.
+Our Bigcommerce App will integrate with your product data to enable advanced PriceWaiter features: Inventory levels, automated responses based on retail price or product cost and your margins.
 
 * * *
 
-## Adding the Widget Code
+## Adding the button code for Stencil Themes
+
+1. Login to your Bigcommerce admin panel
+2. In the side menu, click __"Storefront Design"__
+3. On the __"Design Options"__ screen select __"Scripts"__ from the top menu
+4. Insert this Javascript code where you want the PriceWaiter button to appear:
+
+{% highlight html %}
+<!-- Begin PriceWaiter Widget Button -->
+<script src="https://widget.pricewaiter.com/script/<your api key here>.js" async></script>
+<!-- End PriceWaiter Widget Button -->
+{% endhighlight %}
+
+<ol start="5">
+    <li>Click <strong>"Save"</strong></li>
+</ol>
+<ol start="6">
+    <li>The button will be automatically placed near your add-to-cart button.</li>
+</ol>
+
+
+## Adding the button code for Blueprint Themes
 
 1. Login to your Bigcommerce admin panel
 2. At the top of the page, navigate to __"Design"__

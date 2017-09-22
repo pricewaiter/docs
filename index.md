@@ -13,6 +13,7 @@ We have ready-to-go plugins for many popular e-commerce platforms. See our [inte
     <a href="/platforms/magento.html" class="btn btn-primary btn-outline btn-lg">Magento Extension</a>
     <a href="/platforms/shopify.html" class="btn btn-primary btn-outline btn-lg">Shopify App</a>
     <a href="/platforms/woocommerce.html" class="btn btn-primary btn-outline btn-lg">Woocommerce App</a>
+    <a href="/platforms/volusion.html" class="btn btn-primary btn-outline btn-lg">Volusion App</a>
 </div>
 
 * * *

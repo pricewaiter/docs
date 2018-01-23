@@ -19,8 +19,9 @@ Our Bigcommerce App will integrate with your product data to enable advanced Pri
 ## Adding the button code for Stencil Themes
 
 1. Login to your Bigcommerce admin panel
-2. In the side menu, click __"Storefront Design"__
-3. On the __"Design Options"__ screen select __"Scripts"__ from the top menu
+2. In the side menu, click __"Storefront"__
+3. Select __"Footer Scripts"__ from the menu
+4. Locate your API key and place it where "<your api key here>" is located in the below script. Remember to remove the brackets as well as the text.
 4. Insert this Javascript code where you want the PriceWaiter button to appear:
 
 {% highlight html %}

@@ -17,7 +17,7 @@ The official PriceWaiter Magento extension allows you to quickly enable, configu
 ### Installing the PriceWaiter Magento Extension
 
 1. Purchase our free [Make an Offer extension](https://marketplace.magento.com/pricewaiter-nypwidget.html) in the Marketplace
-1. [Find your extension key](https://marketplace.magento.com/customer/accessKeys/list/) for the latest version of the `pricewaiter/nypwidget` extention.
+1. [Find your extension key](https://marketplace.magento.com/customer/accessKeys/) for the latest version of the `pricewaiter/nypwidget` extention.
 
 2. Log in to your Magento Admin panel.
 3. Navigate to __"System"__ -> __"Magento Connect"__ -> __"Magento Connect Manager"__.

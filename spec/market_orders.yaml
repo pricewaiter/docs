@@ -1,6 +1,6 @@
 swagger: "2.0"
 info:
-  description: "This is a sample server Petstore server.  You can find out more about     Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/).      For this sample, you can use the api key `special-key` to test the authorization     filters."
+  description: "API to poll for access to purchased orders"
   version: "1.0.0"
   title: "PriceWaiter Market Orders API"
   termsOfService: "https://market.pricewaiter.com/terms"
@@ -47,7 +47,9 @@ paths:
         200:
           description: "successful operation"
           schema:
-            $ref: "#/definitions/Order"
+            type: "array"
+            items:
+              $ref: "#/definitions/Order"
         400:
           description: "Invalid Order"
   /api/v1/orders/{orderId}:
@@ -55,7 +57,7 @@ paths:
       tags:
       - "orders"
       summary: "Find order by ID"
-      description: "For valid response try integer IDs with value >= 1 and <= 10.         Other values will generated exceptions"
+      description: "Fetch details of a specific order"
       operationId: "getOrderById"
       produces:
       - "application/json"
@@ -63,12 +65,9 @@ paths:
       parameters:
       - name: "orderId"
         in: "path"
-        description: "ID of pet that needs to be fetched"
+        description: "ID of order to fetch"
         required: true
-        type: "integer"
-        maximum: 10.0
-        minimum: 1.0
-        format: "int64"
+        type: "string"
       responses:
         200:
           description: "successful operation"
@@ -98,6 +97,7 @@ definitions:
       id:
         type: "integer"
         format: "int64"
+        example: "42"
       line_items:
         type: "array"
         items:
@@ -115,16 +115,20 @@ definitions:
     properties:
       quantity:
         type: "integer"
-        format: "int64"
+        format: "int32"
+        example: "2"
       product:
         type: "object"
         $ref: '#/definitions/Product'
       unit_price_cents:
         type: "integer"
+        example: "1999"
       subtotal_cents:
         type: "integer"
+        example: "3998"
       tax_cents:
         type: "integer"
+        example: "123"
     xml:
       name: "LineItem"
 
@@ -133,12 +137,16 @@ definitions:
     properties:
       brand:
         type: "string"
+        example: "Nike"
       product_name:
         type: "string"
+        example: "ZOOM TRAIN COMMAND"
       product_sku:
         type: "string"
+        example: "22478002"
       product_id:
         type: "string"
+        example: "22478002"
       options:
         type: "array"
         items:
@@ -151,39 +159,53 @@ definitions:
     properties:
       name:
         type: "string"
+        example: "color"
       value:
         type: "string"
+        example: "dark grey"
       id:
         type: "string"
+        example: "33"
       value_id:
         type: "string"
+        example: "234234"
 
   Shipping:
     type: "object"
     properties:
       method:
         type: "string"
+        example: "UPS Ground"
       delivery_date:
         type: "string"
         format: "date"
+        example: "2017-11-23"
+      shipping_cents:
+        type: "integer"
+        example: "222"
 
   Payment:
     type: "object"
     properties:
       method:
         type: "string"
+        example: "stripe"
       card_last_4:
         type: "integer"
+        example: "1234"
       transaction_id:
         type: "string"
+        example: "sp_2e4f6g9er"
       total_cents:
         type: "integer"
+        example: "4,343"
 
   Customer:
     type: "object"
     properties:
       name:
         type: "string"
+        example: "John Smith"
       billing_address:
         $ref: '#/definitions/Address'
       shipping_address:
@@ -194,18 +216,23 @@ definitions:
     properties:
       line1:
         type: "string"
+        example: "426 Market St"
       line2:
         type: "string"
       line3:
         type: "string"
       city:
         type: "string"
+        example: "Chattanooga"
       state:
         type: "string"
+        example: "TN"
       country:
         type: "string"
+        example: "US"
       postal_code:
         type: "string"
+        example: "98225"
 
   ApiResponse:
     type: "object"

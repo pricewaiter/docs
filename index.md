@@ -1,60 +1,29 @@
 ---
 layout: default
 title: "PriceWaiter Developer Documentation"
-description: "Quick Start Guide"
+description: "Onsite Quick Start Guide"
 ---
 
-# Getting Started with PriceWaiter
+# PriceWaiter Developer Documentation
 
-We have ready-to-go plugins for many popular e-commerce platforms. See our [integrations list](https://www.pricewaiter.com/integrations/) to see if your platform is supported.
+PriceWaiter has two products for retailers.
 
-<div class="featured-platforms">
-    <a href="/platforms/bigcommerce.html" class="btn btn-primary btn-outline btn-lg">Bigcommerce App</a>
-    <a href="/platforms/magento.html" class="btn btn-primary btn-outline btn-lg">Magento Extension</a>
-    <a href="/platforms/shopify.html" class="btn btn-primary btn-outline btn-lg">Shopify App</a>
-    <a href="/platforms/woocommerce.html" class="btn btn-primary btn-outline btn-lg">Woocommerce App</a>
-    <a href="/platforms/volusion.html" class="btn btn-primary btn-outline btn-lg">Volusion App</a>
-</div>
+## PriceWaiter OnSite
 
-* * *
+PriceWaiter OnSite allows retailers to install innovative call-to-action buttons on their product pages, which let buyers engage in a conversation about price before leaving their site to shop around.
 
-## Getting started with a custom installation
+**Find out more**
 
-A custom install is easy to perform with a few small pieces of HTML and Javascript.
+* <a href="/widget/00_quick_start.html">Onsite Quick Start Guide</a>
+* <a href="/api/reference.html">Onsite Widget API Reference</a>
+* <a href="/platforms/integrations.html">PriceWaiter OnSite Platform extensions &amp; plugins</a>
+* <a href="/conversion/tracking.html">Conversion Tracking Options</a>
 
+## PriceWaiter Market
 
-### Step One
+PriceWaiter Market is a browser toolbar allowing buyers to find additional sellers as they browse products online.
+<a href="https://market.pricewaiter.com/retailers">Sign up for PriceWaiter Market</a> to capture sales from your competitors for brands that you sell.
 
-First put a PriceWaiter placeholder where you'd like the button to appear on the page:
+**Market Integration Options**
 
-{% highlight html %}
-<span id="pricewaiter"></span>
-{% endhighlight %}
-
-### Step Two
-
-Then include the script block to configure the button:
-
-{% highlight html %}
-<script>
-var PriceWaiterOptions = {
-
-    // Configure the product the Name Your Price widget applies to.
-    product: {
-        sku: 'EXAMPLE-1234',
-        name: 'Left-handed Smoke Shifter',
-        image: 'http://lorempixel.com/output/business-q-c-640-480-9.jpg',
-        price: '19.99'
-    }
-
-};
-</script>
-{% endhighlight %}
-
-### Step Three
-
-Then, include this code at the bottom of the page to load the button:
-
-{% highlight html %}
-<script src="https://widget.pricewaiter.com/script/<your api key here>.js" async></script>
-{% endhighlight %}
+* <a href="market/order_api.html">Market Orders API</a>

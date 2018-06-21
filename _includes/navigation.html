@@ -1,5 +1,4 @@
 <ul class="nav nav-list">
-    <li><a href="/">Quick Start Guide</a></li>
     {% for section in site.sections %}
         {% assign attr = section[0] %}
         {% assign label = section[1] %}
@@ -12,15 +11,15 @@
                     {% assign showSubnav = true %}
                 {% endif %}
 
-                {% if page.collection == 'misc' and nav_item.category == 'misc' %}
-                    {% assign showSubnav = true %}
-                {% endif %}
-
                 {% if page.collection == 'platforms' and nav_item.category == 'platforms' %}
                     {% assign showSubnav = true %}
                 {% endif %}
 
                 {% if page.collection == 'conversion' and nav_item.category == 'conversion' %}
+                    {% assign showSubnav = true %}
+                {% endif %}
+
+                {% if page.collection == 'market' and nav_item.category == 'market' %}
                     {% assign showSubnav = true %}
                 {% endif %}
 
@@ -33,13 +32,9 @@
                         {% assign title = item.nav_title %}
                     {% endif %}
 
-                    {% if attr == 'platforms' or attr == 'misc' or attr == 'conversion' %}
-                        {% unless item.nav_hidden %}
+                    {% unless item.nav_hidden %}
                     <li><a href="{{ item.url }}">{{ title }}</a></li>
-                        {% endunless %}
-                    {% else %}
-                    <li><a href="{{ nav_item.url }}#{{ item.relative_path }}">{{ title }}</a></li>
-                    {% endif %}
+                    {% endunless %}
 
                 {% endfor %}
                 </ul>

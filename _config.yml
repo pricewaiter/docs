@@ -23,17 +23,19 @@ sections: [
     ['api', 'Reference'],
     ['platforms', 'Platforms'],
     ['conversion', 'Conversion Tracking'],
-    ['misc', 'Extra Functionality'],
+    ['market', 'Market Integration'],
 ]
 
 collections:
   widget:
+    output: true
   api:
+    output: true
   platforms:
     output: true
-  misc:
-    output: true
   conversion:
+    output: true
+  market:
     output: true
 
 # Keep as an empty string if served up at the root. If served up at a specific

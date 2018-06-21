@@ -17,6 +17,6 @@ title: Market Order API
 <script>
 SwaggerUIBundle({
     dom_id: '#swag',
-    url: '/spec/market_orders.yaml'
+    url: '/spec/v1/market_orders.yaml'
 });
 </script>

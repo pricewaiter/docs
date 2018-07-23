@@ -32,9 +32,13 @@
                         {% assign title = item.nav_title %}
                     {% endif %}
 
+                    {% if attr == 'platforms' or attr == 'market' or attr == 'conversion' %}
                     {% unless item.nav_hidden %}
                     <li><a href="{{ item.url }}">{{ title }}</a></li>
                     {% endunless %}
+                    {% else %}
+                    <li><a href="{{ nav_item.url }}#{{ item.relative_path }}">{{ title }}</a></li>
+                    {% endif %}
 
                 {% endfor %}
                 </ul>

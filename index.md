@@ -14,10 +14,10 @@ PriceWaiter OnSite allows retailers to install innovative call-to-action buttons
 
 **Find out more**
 
-* <a href="/widget/00_quick_start.html">Onsite Quick Start Guide</a>
-* <a href="/api/reference.html">Onsite Widget API Reference</a>
-* <a href="/platforms/integrations.html">PriceWaiter OnSite Platform extensions &amp; plugins</a>
-* <a href="/conversion/tracking.html">Conversion Tracking Options</a>
+- <a href="/widget/00_quick_start.html">Onsite Quick Start Guide</a>
+- <a href="/api/reference.html">Onsite Widget API Reference</a>
+- <a href="/platforms/integrations.html">PriceWaiter OnSite Platform extensions &amp; plugins</a>
+- <a href="/conversion/tracking.html">Conversion Tracking Options</a>
 
 ## PriceWaiter Market
 
@@ -26,4 +26,7 @@ PriceWaiter Market is a browser toolbar allowing buyers to find additional selle
 
 **Market Integration Options**
 
-* <a href="market/order_api.html">Market Orders API</a>
+- <a href="market/order_api.html">Market Orders API</a>
+- <a href="market/bc_app.html">Market Bigcommerce Integration</a>
+- <a href="market/magento_app.html">Market Magento Integration</a>
+- <a href="market/feed_instructions.html">Market Feed Instructions</a>

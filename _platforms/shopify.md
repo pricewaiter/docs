@@ -9,8 +9,33 @@ redirect_from:
 The official PriceWaiter app for Shopify will have you selling more in no time flat. The installation process is a breeze and can be done in less than 10 minutes.  A order will be created in your Shop after a successful deal is made and the buyer purchases on PriceWaiter.
 
 <center>
-    <a class="btn btn-primary btn-outline btn-lg" href="https://apps.shopify.com/pricewaiter-name-your-price" target="_blank">Find Pricewaiter in the Shopify App Store</a>
+    <label>
+        Shopify domain:
+    </label>
+    <input type="text" id="shopifyDomain" />
+    <a class="btn btn-primary btn-outline btn-lg" id="installShopify" href="#" target="_blank">Install PriceWaiter on your Shopify Store</a>
 </center>
+
+<script>
+function getInstallUrl(domain) {
+
+    domain = domain.replace(/^https?:\/\//ig, '').replace(/[^a-z0-9.]/ig, '');
+    var client_id = '205942c7fc2eea05ad94b1ee4e9a5458';
+    var scope = 'write_themes,write_script_tags,write_orders,write_customers,write_products';
+    var redirect = 'https://manage.pricewaiter.com/shopify/auth.php';
+    return 'https://' + domain + '/admin/oauth/authorize?client_id=' + encodeURIComponent(client_id) + '&scope=' + encodeURIComponent(scope) + '&redirect_uri=' + encodeURIComponent(redirect);
+}
+
+document.getElementById('installShopify').addEventListener('click', function (e) {
+    e.preventDefault();
+    var domain = document.getElementById('shopifyDomain').value;
+    if (!domain) {
+        alert('Please enter your shopify domain to install plugin.');
+    }
+    location.href = getInstallUrl(domain);
+})
+
+</script>
 
 * * *
 

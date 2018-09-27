@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Market Order API
+title: Market Orders REST API
+nav_hidden: true
 ---
 
 <style>

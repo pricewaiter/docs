@@ -119,9 +119,4 @@ title: Feed Format
             <td>category this product belongs to</td>
         </tr>
     </tbody>
-    <tfoot>
-        <tr>
-            <td colspan="2">The table footer</td>
-        </tr>
-    </tfoot>
 </table>

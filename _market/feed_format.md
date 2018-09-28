@@ -3,6 +3,14 @@ layout: page
 title: Feed Format
 ---
 
+<h4><p>
+    Your Product Feed will allow PriceWaiter to show the Make an Offer banner to shoppers on your competitors' sites based on matches with your products. It will also allow us to automate responses to offers from shoppers to boost conversion rates and save you time. Once a shopper places an order, your Product Feed helps us accurately write the order to your system for fulfillment.
+</p></h4>
+
+<h4><p>
+    Currently we only support .csv or .xml feed formats
+</p></h4>
+
 <table>
     <thead>
         <tr>

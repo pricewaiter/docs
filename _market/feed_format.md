@@ -14,7 +14,7 @@ title: Feed Format
 <table>
     <thead>
         <tr>
-            <th colspan="2"><h3>Column headers</h3></th>
+            <th colspan="4"><h3>Column headers</h3></th>
         </tr>
     </thead>
     <tbody>

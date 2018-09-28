@@ -50,13 +50,17 @@ title: Feed Format
             <td><h4>list price:</h4></td>
             <td><strong>required</strong></td>
             <td>number</td>
-            <td>list price of the product on your site</td>
+            <td>usual price product is sold for on your site</td>
         </tr>
         <tr>
             <td><h4>sku:</h4></td>
             <td><strong>required</strong></td>
             <td>string</td>
-            <td>store sku value or mpn</td>
+        </tr>
+        <tr>
+            <td><h4>sku:</h4></td>
+            <td><strong>required</strong></td>
+            <td>string</td>
         </tr>
         <tr>
             <td><h4>asin:</h4></td>

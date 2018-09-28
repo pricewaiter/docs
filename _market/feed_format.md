@@ -8,7 +8,7 @@ title: Feed Format
 </p></h4>
 
 <h4><p>
-    Currently we only support .csv or .xml feed formats
+    Currently we only support .csv or .xml feed formats.
 </p></h4>
 
 <table>

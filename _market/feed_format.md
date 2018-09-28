@@ -11,6 +11,8 @@ title: Feed Format
     Currently we only support .csv or .xml feed formats.
 </p></h4>
 
+<a href="/files/pricewaiter_sample_feed.csv">Download a sample feed CSV file</a>.
+
 <table>
     <thead>
         <tr>

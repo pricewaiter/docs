@@ -43,6 +43,18 @@ title: Feed Format
             <td>name of the brand or manufacturer</td>
         </tr>
         <tr>
+            <td><h4>mpn:</h4></td>
+            <td><strong>required</strong></td>
+            <td>string</td>
+            <td></td>
+        </tr>        
+        <tr>
+            <td><h4>gtin:</h4></td>
+            <td><strong>required</strong></td>
+            <td>string</td>
+            <td>product gtin or upc</td>
+        </tr>        
+        <tr>
             <td><h4>availability:</h4></td>
             <td><strong>required</strong></td>
             <td>string</td>
@@ -61,28 +73,16 @@ title: Feed Format
             <td>usual price product is sold for on your site</td>
         </tr>
         <tr>
-            <td><h4>mpn:</h4></td>
-            <td><strong>required</strong></td>
-            <td>string</td>
-            <td></td>
-        </tr>
-        <tr>
             <td><h4>sku:</h4></td>
-            <td><strong>required</strong></td>
+            <td><strong>recommended</strong></td>
             <td>string</td>
             <td></td>
         </tr>
         <tr>
             <td><h4>asin:</h4></td>
-            <td><strong>required</strong></td>
+            <td><strong>recommended</strong></td>
             <td>string</td>
             <td>product asin</td>
-        </tr>
-        <tr>
-            <td><h4>gtin:</h4></td>
-            <td><strong>required</strong></td>
-            <td>string</td>
-            <td>product gtin or upc</td>
         </tr>
         <tr>
             <td><h4>minimum price:</h4></td>

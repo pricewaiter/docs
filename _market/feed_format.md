@@ -61,7 +61,7 @@ title: Feed Format
             <td>usual price product is sold for on your site</td>
         </tr>
         <tr>
-            <td><h4>sku:</h4></td>
+            <td><h4>mpn:</h4></td>
             <td><strong>required</strong></td>
             <td>string</td>
             <td></td>

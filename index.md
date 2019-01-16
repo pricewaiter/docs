@@ -26,7 +26,7 @@ PriceWaiter Market is a browser toolbar allowing buyers to find additional selle
 
 **Market Integration Options**
 
-- <a href="market/order_api.html">Market Orders API</a>
+- <a href="market/orders.html">Order Processing (API &amp; FTP)</a>
 - <a href="market/bc_app.html">Market Bigcommerce Integration</a>
 - <a href="market/magento_app.html">Market Magento Integration</a>
 - <a href="market/feed_format.html">Market Feed Instructions</a>

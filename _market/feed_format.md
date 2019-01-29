@@ -43,7 +43,7 @@ title: Feed Format
             <td><h4>image</h4></td>
             <td><strong>recommended</strong></td>
             <td>string</td>
-            <td>link to product image</td>
+            <td>Link to product image. Multiple image urls supported separated by "|", with the first image as the main product image.</td>
         </tr>
         <tr>
             <td><h4>brand</h4></td>

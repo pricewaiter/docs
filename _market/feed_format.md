@@ -34,6 +34,12 @@ title: Feed Format
             <td>name of product in your catalog</td>
         </tr>
         <tr>
+            <td><h4>description</h4></td>
+            <td><strong>required</strong></td>
+            <td>string</td>
+            <td>body of text describing the product to be shown to a buyer</td>
+        </tr>
+        <tr>
             <td><h4>link</h4></td>
             <td><strong>recommended</strong></td>
             <td>string</td>
@@ -41,7 +47,7 @@ title: Feed Format
         </tr>
         <tr>
             <td><h4>image</h4></td>
-            <td><strong>recommended</strong></td>
+            <td><strong>required</strong></td>
             <td>string</td>
             <td>Link to product image. Multiple image urls supported separated by "|", with the first image as the main product image.</td>
         </tr>

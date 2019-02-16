@@ -40,16 +40,28 @@ title: Feed Format
             <td>body of text describing the product to be shown to a buyer</td>
         </tr>
         <tr>
-            <td><h4>link</h4></td>
-            <td><strong>recommended</strong></td>
-            <td>string</td>
-            <td>link to product in your catalog</td>
-        </tr>
-        <tr>
             <td><h4>image</h4></td>
             <td><strong>required</strong></td>
             <td>string</td>
             <td>Link to product image. Multiple image urls supported separated by "|", with the first image as the main product image.</td>
+        </tr>
+        <tr>
+            <td><h4>list price</h4></td>
+            <td><strong>required</strong></td>
+            <td>number</td>
+            <td>usual price product is sold for on your site</td>
+        </tr>
+        <tr>
+            <td><h4>minimum price</h4></td>
+            <td><strong>required</strong></td>
+            <td>number</td>
+            <td>minimum price you are willing to sell your product for</td>
+        </tr>
+        <tr>
+            <td><h4>link</h4></td>
+            <td><strong>recommended</strong></td>
+            <td>string</td>
+            <td>link to product in your catalog</td>
         </tr>
         <tr>
             <td><h4>brand</h4></td>
@@ -88,12 +100,6 @@ title: Feed Format
             <td>number of the product in your inventory</td>
         </tr>
         <tr>
-            <td><h4>list price</h4></td>
-            <td><strong>recommended</strong></td>
-            <td>number</td>
-            <td>usual price product is sold for on your site</td>
-        </tr>
-        <tr>
             <td><h4>sku</h4></td>
             <td><strong>recommended</strong></td>
             <td>string</td>
@@ -104,12 +110,6 @@ title: Feed Format
             <td><strong>recommended</strong></td>
             <td>string</td>
             <td>product asin</td>
-        </tr>
-        <tr>
-            <td><h4>minimum price</h4></td>
-            <td><strong>required to respond automatically</strong></td>
-            <td>number</td>
-            <td>minimum price you are willing to sell your product for</td>
         </tr>
         <tr>
             <td><h4>shipping</h4></td>

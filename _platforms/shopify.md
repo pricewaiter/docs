@@ -19,7 +19,7 @@ The official PriceWaiter app for Shopify will have you selling more in no time f
 <script>
 function getInstallUrl(domain) {
 
-    domain = domain.replace(/^https?:\/\//ig, '').replace(/[^a-z0-9.]/ig, '');
+    domain = domain.replace(/^https?:\/\//ig, '').replace(/[^a-z0-9.-]/ig, '');
     var client_id = '205942c7fc2eea05ad94b1ee4e9a5458';
     var scope = 'write_themes,write_script_tags,write_orders,write_customers,write_products';
     var redirect = 'https://manage.pricewaiter.com/shopify/auth.php';

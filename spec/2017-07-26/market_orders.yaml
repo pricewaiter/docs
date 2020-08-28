@@ -100,6 +100,15 @@ paths:
                   required: true
                   schema:
                       type: 'string'
+            requestBody:
+                required: true
+                content:
+                    application/json:
+                        schema:
+                            type: object
+                            properties:
+                                shipping:
+                                    $ref: '#/components/schemas/Shipping'
             responses:
                 200:
                     description: 'successful operation'

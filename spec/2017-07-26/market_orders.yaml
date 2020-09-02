@@ -270,6 +270,8 @@ components:
                 name:
                     type: 'string'
                     example: 'John Smith'
+                email:
+                    type: 'email'
                 billing_address:
                     $ref: '#/components/schemas/Address'
                 shipping_address:

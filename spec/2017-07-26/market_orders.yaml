@@ -271,7 +271,8 @@ components:
                     type: 'string'
                     example: 'John Smith'
                 email:
-                    type: 'email'
+                    type: 'string'
+                    example: 'buyer@example.com'
                 billing_address:
                     $ref: '#/components/schemas/Address'
                 shipping_address:

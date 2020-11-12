@@ -262,6 +262,9 @@ components:
                 method:
                     type: 'string'
                     example: '2nd Day Air'
+                fulfillment_reference:
+                    type: 'string'
+                    example: 'MAGENTO-3434347'
                 delivery_date:
                     oneOf:
                         - type: 'string'

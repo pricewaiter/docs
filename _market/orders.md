@@ -5,7 +5,11 @@ title: Market Order Processing
 
 ## REST API
 
-Download orders securely via our <a href="/market/order_api.html">Orders REST API</a>
+Our <a href="/market/order_api.html">Pricewaiter REST API</a> supports:
+
+- Downloading orders
+- Providing tracking and fulfillment information
+- Bulk updating product price and inventory data
 
 ## Download Order details via CSV Export from FTP Server
 
@@ -24,6 +28,6 @@ Download orders securely via our <a href="/market/order_api.html">Orders REST AP
 - Upload a CSV anywhere with the following columns:
   - `order number` (required)
   - `tracking number` (required)
+  - `fulfillment reference` - your order management identification number
   - `shipping method`
   - `shipping carrier`
-  - `delivery date`

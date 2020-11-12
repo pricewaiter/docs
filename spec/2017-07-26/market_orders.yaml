@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
     description: 'API to poll for access to purchased orders'
-    version: '1.0.1'
+    version: '1.2.0'
     title: 'PriceWaiter Market Orders API'
     termsOfService: 'https://www.pricewaiter.com/pages/terms'
     contact:
@@ -123,6 +123,35 @@ paths:
                 404:
                     description: 'Order not found'
             x-swagger-router-controller: 'Order'
+    /variants/bulk:
+        put:
+            tags:
+                - 'products'
+            summary: 'Update product variant pricing and inventory in bulk'
+            security:
+                - ApiKeyAuth: []
+            description: 'Update product variant pricing and inventory in bulk'
+            operationId: 'bulkUpdate'
+            requestBody:
+                required: true
+                content:
+                    application/json:
+                        schema:
+                            type: array
+                            maxItems: 1000
+                            items:
+                                $ref: '#/components/schemas/BulkUpdateRequestLine'
+
+            responses:
+                200:
+                    description: 'successful operation'
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/BulkUpdateResponse'
+                401:
+                    description: 'Not Authenticated'
+            x-swagger-router-controller: 'Variant'
 
 components:
     securitySchemes:
@@ -221,6 +250,8 @@ components:
 
         Shipping:
             type: 'object'
+            required:
+                - tracking_number
             properties:
                 carrier:
                     type: 'string'
@@ -231,7 +262,6 @@ components:
                 method:
                     type: 'string'
                     example: '2nd Day Air'
-                    readOnly: true
                 delivery_date:
                     oneOf:
                         - type: 'string'
@@ -303,3 +333,27 @@ components:
                 phone:
                     type: 'string'
                     example: '1-855-671-9889'
+
+        BulkUpdateRequestLine:
+            type: 'object'
+            required:
+                - sku
+            minProperties: 2
+            properties:
+                sku:
+                    type: 'string'
+                    example: 'LG-AB134242'
+                minimum_price_cents:
+                    type: 'integer'
+                    example: 299999
+                quantity:
+                    type: 'integer'
+                    example: 42
+
+        BulkUpdateResponse:
+            type: 'object'
+            properties:
+                successCount:
+                    type: 'integer'
+                mismatchCount:
+                    type: 'integer'

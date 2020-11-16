@@ -106,6 +106,16 @@ paths:
                     application/json:
                         schema:
                             type: object
+                            required:
+                                - shipping
+                            properties:
+                                shipping:
+                                    $ref: '#/components/schemas/Shipping'
+                    application/x-www-form-urlencoded:
+                        schema:
+                            type: object
+                            required:
+                                - shipping
                             properties:
                                 shipping:
                                     $ref: '#/components/schemas/Shipping'

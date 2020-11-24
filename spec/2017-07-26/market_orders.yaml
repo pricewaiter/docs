@@ -43,6 +43,13 @@ paths:
                   required: false
                   schema:
                       type: 'integer'
+                - in: 'query'
+                  name: 'status'
+                  description: 'Limit orders to a specific status'
+                  required: false
+                  schema:
+                      type: 'string'
+                      enum: [refunded, fulfilled, unfulfilled]
             responses:
                 200:
                     description: 'successful operation'
@@ -183,6 +190,13 @@ components:
                     type: 'string'
                     format: 'date'
                     example: '2017-11-23'
+                    readOnly: true
+                refunded_at:
+                    oneOf:
+                        - type: 'string'
+                        - type: 'null'
+                    format: 'date'
+                    example: '2017-11-25'
                     readOnly: true
                 line_items:
                     type: 'array'

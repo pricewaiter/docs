@@ -3,16 +3,17 @@ layout: page
 title: Checkout Redirect
 ---
 
-PriceWaiter can redirect buyers to a custom page on your website after a successful order purchase. You may use this page to trigger Javascript conversion tracking events. Under *Advanced Settings* in your PriceWaiter account, you can set the Checkout Redirect url and HTTP POST/GET method. We recommend POST unless you have specific technical need for the GET HTTP method.
+PriceWaiter can redirect buyers to a custom page on your website after a successful order purchase. You may use this page to trigger Javascript conversion tracking events. Under _Advanced Settings_ in your PriceWaiter account, you can set the Checkout Redirect url and HTTP POST/GET method. We recommend POST unless you have specific technical need for the GET HTTP method.
 
-We _do not_ recommend using checkout redirect to process order details into a fulfilment system. Our supported platforms do that automatically, and custom integrations can use the [Order Callback API](/misc/order-callback.html) to securely process orders.
+We _do not_ recommend using checkout redirect to process order details into a fulfilment system. Our supported platforms do that automatically, and custom integrations can use the [Order Callback API](/platforms/order-callback.html) to securely process orders.
 
 ## Google Analytics Ecommerce tracking
 
-*This example uses PHP scripting. Other languages will need to adapt for different methods of accessing HTTP request variables.*
-*This example may be different if using the newer Universal Analytics style.*
+_This example uses PHP scripting. Other languages will need to adapt for different methods of accessing HTTP request variables._
+_This example may be different if using the newer Universal Analytics style._
 
 {% highlight html %}
+
 <script>
 _gaq.push(['_addItem',
     '<?php echo json_encode($_POST['pricewaiter_id']); ?>',
@@ -36,6 +37,7 @@ _gaq.push(['_addTrans',
 
 _gaq.push(['_trackTrans']);
 </script>
+
 {% endhighlight %}
 
 Generally the same variables from the [Order Callback API](/misc/order-callback.html) are available to Checkout Redirect.

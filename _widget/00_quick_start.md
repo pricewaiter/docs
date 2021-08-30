@@ -15,27 +15,26 @@ We have ready-to-go plugins for many popular e-commerce platforms. See our [inte
     <a href="/platforms/volusion.html" class="btn btn-primary btn-outline btn-lg">Volusion App</a>
 </div>
 
-* * *
+---
 
 ## Getting started with a custom installation
 
 A custom install is easy to perform with a few small pieces of HTML and Javascript.
 
-
 ### Step One
 
 First put a PriceWaiter placeholder where you'd like the button to appear on the page:
 
-{% highlight html %}
-<span id="pricewaiter"></span>
-{% endhighlight %}
+<pre><code class="html">
+&lt;span id="pricewaiter"&gt;&lt;/span&gt;
+</code></pre>
 
 ### Step Two
 
 Then include the script block to configure the button:
 
-{% highlight html %}
-<script>
+<pre><code class="javascript">
+&lt;script&gt;
 var PriceWaiterOptions = {
 
     // Configure the product the Name Your Price widget applies to.
@@ -47,13 +46,16 @@ var PriceWaiterOptions = {
     }
 
 };
-</script>
-{% endhighlight %}
+&lt;/script&gt;
+
+</code></pre>
 
 ### Step Three
 
 Then, include this code at the bottom of the page to load the button:
 
-{% highlight html %}
-<script src="https://widget.pricewaiter.com/script/<your api key here>.js" async></script>
-{% endhighlight %}
+<pre><code class="javascript">
+
+&lt;script src="https://widget.pricewaiter.com/script/[your api key here].js" async&gt;&lt;/script&gt;
+
+</code></pre>
